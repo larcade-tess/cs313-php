@@ -1,0 +1,74 @@
+.first {
+	height:60px;
+	width:600px;
+	background-color:#003366;
+	border:2px solid grey;
+	margin-bottom:10px;
+	padding-left:10px;
+	color:#DAA520;
+	text-align:left;
+	border:2px solid grey;
+	font-size:1.5em;
+	font-family: 'Merriweather', serif;
+	display:flex;
+}
+
+.first:hover { 
+    font-weight: 700;
+}
+
+#colorPicker {
+	display:flex;
+	flex-flow:column;
+	width:80px;
+  	align-items: flex-start;
+
+}
+
+.second {
+	height:60px;
+	width:400px;
+	background-color:#FAEBD7;
+	border:2px solid grey;
+	margin-bottom:10px;
+	padding-left:10px;
+	color:#003366;
+	text-align:left;
+	border:2px solid grey;
+	font-size:1.5em;
+	font-family: 'Merriweather', serif;;
+}
+
+.second:hover { 
+    font-weight: 700;
+}
+
+.third {
+
+	height:60px;
+	width:200px;
+	background-color:#DAA520;
+	border:2px solid grey;
+	margin-bottom:10px;
+	padding-left:10px;
+	color:#FAEBD7;
+	text-align:left;
+	border:2px solid grey;
+	font-size:1.5em;
+	font-family: 'Merriweather', serif;
+}
+
+.third:hover { 
+    font-weight: 700;
+}
+
+#button1 {
+	background-color:#003366;
+	color:#DAA520;
+	text-align:center;
+	padding:15px 10px;
+	border:2px solid grey;
+	font-size:1.5em;
+	font-family: 'Forum', cursive;
+	font-weight:600;
+}
