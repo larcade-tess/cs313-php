@@ -15,7 +15,7 @@
   		<nav>
   			<ul>
   				<li>
-  					<a href='index.php'>Home</a>
+  					<a href='home.php'>Home</a>
   				</li>
   				<li>
   					<a href='links.php'>Links</a>
