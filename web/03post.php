@@ -3,7 +3,7 @@
   <head>
   	<link rel="stylesheet" type="text/css" href="css/main.css">
   	<link href="https://fonts.googleapis.com/css?family=Great+Vibes|Slabo+27px" rel="stylesheet">
-  	<title>Tess Larcade</title>
+  	<title>Tess Larcade CS313</title>
   </head>
   <body>
   	<header>
@@ -24,17 +24,19 @@
   		</nav>
   	</header>
   	<main>
-  		<div class = 'box'>
-        <h2>Week 30</h2>
-        <ul>
-          <li><a href='03Teach.php'>Form</a></li>
-          <li><a href='03post.php'>Results</a></li>
-
-        </ul>
-      </div>
-    </main>
-    <footer>
-     &copy; Tess Larcade 2018
-   </footer>
- </body>
- </html>
+  		<div>
+  			<p> Hi <?php echo $_POST["name"]; ?>, 
+  				<br>
+  				Your email address is: <?php echo $_POST['email']; ?>
+  				<br>
+  				Your major is: <?php echo $_POST['major']; ?>
+  				<br>
+  				Comments: <?php echo $_POST['comments']; ?>
+  			</p>
+  		</div>
+  	</main>
+  	<footer>
+  		&copy; Tess Larcade 2018
+  	</footer>
+  </body>
+  </html>
