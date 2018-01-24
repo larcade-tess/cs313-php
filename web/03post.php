@@ -25,9 +25,9 @@
   	</header>
   	<main>
   		<div>
-  			<p> Hi <?php echo $_POST["name"]; ?>, 
+  			<p> Hi <?php echo $_POST['name']; ?>, 
   				<br>
-  				Your email address is: <?php echo $_POST['email']; ?>
+  				Your email address is: <a href='mailto:<?php echo $_POST['email']; ?>'></a>
   				<br>
   				Your major is: <?php echo $_POST['major']; ?>
   				<br>
