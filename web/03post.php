@@ -33,7 +33,7 @@
 
   				<br>
   				You've visited: 
-  				<? foreach ($places as $place)
+  				<? php foreach ($places as $place)
   				{
   					echo &_POST['place'];
   				}
