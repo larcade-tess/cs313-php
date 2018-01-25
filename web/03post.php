@@ -24,19 +24,7 @@
   		</nav>
   	</header>
   	<main>
-  		<div>
-  			<p> Hi <?php echo $_POST['name']; ?>, 
-  				<br>
-  				Your email address is: <a href="mailto:<?=$email ?>"><?php echo $_POST'email'?></a>
-  				<br>
-  				Your major is: <?php echo $_POST['major']; ?>
-
-  				<br>
-  				You've visited: 
-  				<br>
-  				Comments: <?php echo $_POST['comments']; ?>
-  			</p>
-  		</div>
+hello
   	</main>
   	<footer>
   		&copy; Tess Larcade 2018
