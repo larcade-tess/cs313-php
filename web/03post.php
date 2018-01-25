@@ -35,8 +35,7 @@
   				You've visited: 
   				<? foreach ($places as $place)
   				{
-  					$place_clean = htmlspecialchars($place);
-  					echo &_POST'place_clean';
+  					echo &_POST['place'];
   				}
   				?>		
 
