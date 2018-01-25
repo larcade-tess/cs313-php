@@ -27,7 +27,7 @@
   		<div>
   			<p> Hi <?php echo $_POST['name']; ?>, 
   				<br>
-  				Your email address is: <a href="mailto:<?=$email ?>"><?=$email ?></a></p>
+  				Your email address is: <a href="mailto:<?=$email ?>"><?php echo $_POST'email'?></a></p>
   				<br>
   				Your major is: <?php echo $_POST['major']; ?>
 
@@ -36,7 +36,7 @@
   				<? foreach ($places as $place)
   				{
   					$place_clean = htmlspecialchars($place);
-  					echo "<li><p>$place_clean</p></li>";
+  					echo &_POST'place_clean';
   				}
   				?>		
 
