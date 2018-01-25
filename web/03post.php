@@ -1,8 +1,4 @@
-  <?php 
-  $places = $_POST["places"];
-  ?>
-
-  <!DOCTYPE html>
+ <!DOCTYPE html>
   <html>
   <head>
   	<link rel="stylesheet" type="text/css" href="css/main.css">
@@ -31,19 +27,12 @@
   		<div>
   			<p> Hi <?php echo $_POST['name']; ?>, 
   				<br>
-  				Your email address is: <a href="mailto:<?=$email ?>"><?php echo $_POST'email'?></a></p>
+  				Your email address is: <a href="mailto:<?=$email ?>"><?php echo $_POST'email'?></a>
   				<br>
   				Your major is: <?php echo $_POST['major']; ?>
 
   				<br>
   				You've visited: 
-  				<?
-  				foreach ($places as $place)
-  				{
-  					$place_clean = htmlspecialchars($place);
-  					echo "<li><p>$place_clean</p></li>";
-  				}
-  				?> 
   				<br>
   				Comments: <?php echo $_POST['comments']; ?>
   			</p>
