@@ -31,7 +31,13 @@
   				<br>
   				Your major is: <?php echo $_POST['major']; ?>
   				<br>
-  				You've visited: <?php echo $_POST['continents']; ?>
+  				<? foreach ($places as $place)
+  				{
+  					$place_clean = htmlspecialchars($place);
+  					echo "<li><p>$place_clean</p></li>";
+  				}
+  				?>		
+
   				<br>
   				Comments: <?php echo $_POST['comments']; ?>
   			</p>
