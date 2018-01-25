@@ -1,3 +1,7 @@
+  <?php 
+  $places = $_POST["places"];
+  ?>
+
   <!DOCTYPE html>
   <html>
   <head>
@@ -33,12 +37,13 @@
 
   				<br>
   				You've visited: 
-  				<? php foreach ($places as $place)
+  				<?
+  				foreach ($places as $place)
   				{
-  					echo &_POST['place'];
+  					$place_clean = htmlspecialchars($place);
+  					echo "<li><p>$place_clean</p></li>";
   				}
-  				?>		
-
+  				?>
   				<br>
   				Comments: <?php echo $_POST['comments']; ?>
   			</p>
