@@ -30,7 +30,9 @@
   				Your email address is: <a href='mailto:<?php echo $_POST['email']; ?>'><?php echo $_POST['email']; ?></a>
   				<br>
   				Your major is: <?php echo $_POST['major']; ?>
+
   				<br>
+  				You've visited: 
   				<? foreach ($places as $place)
   				{
   					$place_clean = htmlspecialchars($place);
