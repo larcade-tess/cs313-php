@@ -24,7 +24,19 @@
   		</nav>
   	</header>
   	<main>
-hello
+      <div>
+        <p> Hi <?php echo $_POST['name']; ?>, 
+          <br>
+
+          <br>
+          Your major is: <?php echo $_POST['major']; ?>
+
+          <br>
+          You've visited: 
+          <br>
+          Comments: <?php echo $_POST['comments']; ?>
+        </p>
+      </div>
   	</main>
   	<footer>
   		&copy; Tess Larcade 2018
