@@ -27,7 +27,7 @@
       <div>
         <p> Hi <?php echo $_POST['name']; ?>, 
           <br>
-          Your email address is: <a href="<?php echo $_POST'email'?>"><?php echo $_POST'email'?></a>
+          Your email address is: <?php echo $_POST'email'?>
           <br>
           Your major is: <?php echo $_POST['major']; ?>
 
