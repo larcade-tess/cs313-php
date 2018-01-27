@@ -23,13 +23,28 @@
           <li>
             <a href='cart.html'>View Cart</a>
           </li>
-  			</ul>
-  		</nav>
-  	</header>
-  	<main>
-      <div class=''>
-        <?php echo $_POST[$_SESSION['items']];?>
-      </div>
+        </ul>
+      </nav>
+    </header>
+
+<main>
+  <div>item 1</div>
+  <div>item 2</div>
+  <div>item 3</div>
+  <div>item 4</div>
+  <div>item 5</div>
+</main>
+
+    <main>
+      <?php
+        $count = count($_SESSION['items']);
+        for ($i = 0; $i < $count; $i++) {
+          $itemDiv = "<div class='blah'>";
+          $itemDiv .= $_SESSION['items'][$i];
+          $itemDiv .= "</div>";
+          echo $itemDiv;
+        }
+      ?>
     </main>
     <footer>
      &copy; Tess Larcade 2018
