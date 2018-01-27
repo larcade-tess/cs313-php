@@ -1,8 +1,8 @@
 <?php
 session_start();
 echo "session has been started";
-$my_array = array("item");
-for ($i=1; $i <= 9; $i++) {
-    echo $my_array($i);
+$item_array = array("item");
+for ($i = 0; $i < count(item_array); ++$i) {
+    echo $item_array[$i];
 }
 ?>
