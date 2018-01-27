@@ -27,26 +27,28 @@
       <h2>Order Confirmation</h2>
       <div>
         <?php 
+        $info = $_POST['fName'];
+        $info .= $_POST['lName']; 
+        $info .= $_POST['address'];
+        $info .= $_POST['city'];
+        $info .= $_POST['state']; 
+        $info .= $_POST['zip']; 
+        $info_clean = htmlspecialchars($info);
+        echo $info_clean;
 
-        // echo $_POST['fName'];
-        // echo $_POST['lName']; 
-        // echo $_POST['address'];
-        // echo $_POST['city'];
-        // echo $_POST['state']; 
-        // echo $_POST['zip']; 
-       $info = $_POST['fName'] ."\r\n";
-       $info .=  $_POST['lName']; 
-       $info .= "\r\n" . $_POST['address'];
-       $info .= "\r\n" . $_POST['city'];
-       $info .= "\r\n" . $_POST['state']; 
-       $info .= "\r\n" . $_POST['zip']; 
-       $info_clean = htmlspecialchars($info);
-       echo $info_clean;
+        for ($i = 0; $i < $count; $i++) {
+          $itemDiv = "<div class = 'list'>";
+          $itemDiv .= "  <div> Item: </div>";
+          $itemDiv .= "  <div>" . $items[$i] . "</div>";
+          $itemDiv .= "  <div><input type='button' value='Delete' onclick='removeItem(" . $items[$i] . ")'></div>";
+          $itemDiv .= "</div>";
+          echo $itemDiv;
+        }
         ?> 
-    </div>
-  </main>
-  <footer>
-   &copy; Tess Larcade 2018
- </footer>
-</body>
-</html>
+      </div>
+    </main>
+    <footer>
+     &copy; Tess Larcade 2018
+   </footer>
+ </body>
+ </html>
