@@ -30,14 +30,13 @@
       </nav>
     </header>
     <main>
-      <div class='grid'>
+      <div class='list'>
         <?php
         $items = $_SESSION['items'];
         $count = count($items);
-        echo 'count ' . $count;
         for ($i = 0; $i < $count; $i++) {
-          $itemDiv = "<div style='display: flex; border: solid 1px black; border-radius: 6px; align-items: center;'>";
-          $itemDiv .= "  <div style='margin: 0 10px 0 0;'>Item:</div>";
+          $itemDiv = "<div class = 'list'>";
+          $itemDiv .= "  <div> Item: </div>";
           $itemDiv .= "  <div>" . $items[$i] . "</div>";
           $itemDiv .= "  <div><input type='button' value='Delete' onclick='removeItem(" . $items[$i] . ")'></div>";
           $itemDiv .= "</div>";
