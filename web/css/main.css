@@ -166,3 +166,6 @@ h4 {
 .bottomlink {
 	color:#110221;
 }
+.bottomlink:hover {
+	color:#333333;
+}
