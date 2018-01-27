@@ -22,6 +22,6 @@ function addItem(item) {
 		}
 	};
 	xhttp.open("POST", "https://calm-wave-20284.herokuapp.com/cart.php", true);
-	xhttp.send();
+	xhttp.send(items[item]);
 }
 
