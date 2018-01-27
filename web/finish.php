@@ -28,14 +28,16 @@
       <div>
         <?php 
         $info = $_POST['fName'];
-        $info .= $_POST['lName']; 
-        $info .= $_POST['address'];
-        $info .= $_POST['city'];
-        $info .= $_POST['state']; 
-        $info .= $_POST['zip']; 
+        $info .= "\r\n" . $_POST['lName']; 
+        $info .= "\r\n" . $_POST['address'];
+        $info .= "\r\n" . $_POST['city'];
+        $info .= "\r\n" . $_POST['state']; 
+        $info .= "\r\n" . $_POST['zip']; 
         $info_clean = htmlspecialchars($info);
         echo $info_clean;
 
+        $items = $_SESSION['items'];
+        $count = count($items);
         for ($i = 0; $i < $count; $i++) {
           $itemDiv = "<div class = 'list'>";
           $itemDiv .= "  <div> Item: </div>";
