@@ -1,43 +1,3 @@
-<?php
-$items = [
-  {
-    id: 132,
-    imgUrl: 'http://via.placeholder.com/150x150'
-  },
-  {
-    id: 243,
-    imgUrl: 'http://via.placeholder.com/150x150'
-  },
-  {
-    id: 225,
-    imgUrl: 'http://via.placeholder.com/150x150'
-  },
-  {
-    id: 275,
-    imgUrl: 'http://via.placeholder.com/150x150'
-  },
-  {
-    id: 374,
-    imgUrl: 'http://via.placeholder.com/150x150'
-  },
-  {
-    id: 256,
-    imgUrl: 'http://via.placeholder.com/150x150'
-  },
-  {
-    id: 104,
-    imgUrl: 'http://via.placeholder.com/150x150'
-  },
-  {
-    id: 197,
-    imgUrl: 'http://via.placeholder.com/150x150'
-  },
-  {
-    id: 309,
-    imgUrl: 'http://via.placeholder.com/150x150'
-  }
-];
-?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -73,8 +33,8 @@ $items = [
 
     for ($i = 0; $i < $count; $i++)
     {
-      $itemDiv = "<div> <img src='" . $items[$i].imgUrl . "'> </div>";
-      $itemDiv .= "<div><input type='button' value='Add' onclick='addItem(" . $items[$i].id . ")'></div>";
+      $itemDiv = "<div> <img src=''> </div>";
+      $itemDiv .= "<div><input type='button' value='Add' onclick='addItem(" . 124+i . ")'></div>";
       echo $itemDiv;
     }
     ?>
