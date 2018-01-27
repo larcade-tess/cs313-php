@@ -35,11 +35,11 @@
         // echo $_POST['state']; 
         // echo $_POST['zip']; 
        $info = $_POST['fName'];
-       $info .= '\n' . $_POST['lName']; 
-       $info .= '\n' . $_POST['address'];
-       $info .= '\n' . $_POST['city'];
-       $info .= '\n' . $_POST['state']; 
-       $info .= '\n' . $_POST['zip']; 
+       $info .= '<br>' . $_POST['lName']; 
+       $info .= '<br>' . $_POST['address'];
+       $info .= '<br>' . $_POST['city'];
+       $info .= '<br>' . $_POST['state']; 
+       $info .= '<br>' . $_POST['zip']; 
        $info_clean = htmlspecialchars($info);
        echo $info_clean;
         ?> 
