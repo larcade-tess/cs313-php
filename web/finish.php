@@ -27,14 +27,21 @@
       <h2>Order Confirmation</h2>
       <div>
         <?php 
-        $info = $_POST['fName'];
-        $info .= '\n' . $_POST['lName']; 
-        $info .= '\n' . $_POST['address'];
-        $info .= '\n' . $_POST['city'];
-        $info .= '\n' . $_POST['state']; 
-        $info .= '\n' . $_POST['zip']; 
-        $info_clean = htmlspecialchars($info);
-        echo $info_clean;
+
+        echo $_POST['fName'];
+        echo '\n' . $_POST['lName']; 
+        echo '\n' . $_POST['address'];
+        echo '\n' . $_POST['city'];
+        echo '\n' . $_POST['state']; 
+        echo '\n' . $_POST['zip']; 
+//        $info = $_POST['fName'];
+//        $info .= '\n' . $_POST['lName']; 
+//        $info .= '\n' . $_POST['address'];
+//        $info .= '\n' . $_POST['city'];
+//        $info .= '\n' . $_POST['state']; 
+//        $info .= '\n' . $_POST['zip']; 
+//        $info_clean = htmlspecialchars($info);
+//        echo $info_clean;
         ?> 
     </div>
   </main>
