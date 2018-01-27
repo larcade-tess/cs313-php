@@ -1,5 +1,5 @@
-Hello <?php
-	if ($_POST["item"]) {
-		echo $_POST["item"];
-	}
+<?php
+session_start();
+echo "session has been started";
+my_array = array("item")
 ?>
