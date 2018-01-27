@@ -1,5 +1,5 @@
-<?php
+Hello <?php
 	if ($_POST["item"]) {
-		exit('received' . $_POST["item"]);
+		echo $_POST["item"];
 	}
 ?>
