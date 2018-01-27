@@ -28,31 +28,31 @@
 </header>
 <main>
   <div class='grid'>
-  <div><a href="img/beaded_necklace.jpg"><img src="http://via.placeholder.com/150x150"></a>
+  <div><img src="img/beaded_necklace.jpg">
     <button class='additem' onclick="addItem(135)">Add Item</button>
   </div>
-    <div><a href="img/bracelet.jpg"><img src="http://via.placeholder.com/150x150"></a>
+    <div><img src="img/bracelet.jpg">
     <button class='additem' onclick="addItem(230)">Add Item</button>
   </div>
-    <div><a href="img/round_earrings_tur.jpg"><img src="http://via.placeholder.com/150x150"></a>
+    <div><img src="img/round_earrings_tur.jpg">
     <button class='additem' onclick="addItem(425)">Add Item</button>
   </div>
-    <div><a href="img/silvertur_ear.jpg"><img src="http://via.placeholder.com/150x150"></a>
+    <div><img src="img/silvertur_ear.jpg">
     <button class='additem' onclick="addItem(175)">Add Item</button>
   </div>
-    <div><a href="img/squash.jpg"><img src="http://via.placeholder.com/150x150"></a>
+    <div><img src="img/squash.jpg">
     <button class='additem' onclick="addItem(593)">Add Item</button>
   </div>
-    <div><a href="img/turneck.jpg"><img src="http://via.placeholder.com/150x150"></a>
+    <div><img src="img/turneck.jpg">
     <button class='additem' onclick="addItem(322)">Add Item</button>
   </div>
-    <div><a href="img/turqbracelet.jpg"><img src="http://via.placeholder.com/150x150"></a>
+    <div><img src="img/turqbracelet.jpg">
     <button class='additem' onclick="addItem(339)">Add Item</button>
   </div>
-    <div><a href="img/turqsilbrace.jpg"><img src="http://via.placeholder.com/150x150"></a>
+    <div><img src="img/turqsilbrace.jpg">
     <button class='additem' onclick="addItem(232)">Add Item</button>
   </div>
-    <div><a href="img/redbeaded.jpg"><img src="http://via.placeholder.com/150x150"></a>
+    <div><img src="img/redbeaded.jpg">
     <button class='additem' onclick="addItem(385)">Add Item</button>
   </div>
 </div>
