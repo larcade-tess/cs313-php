@@ -32,7 +32,7 @@
     <main>
       <div style="display: flex; flex-direction: column;">
         <?php
-        $items = $_SESSION['items'];
+        $items = $_SESSION['items']; // items = [1, 6, 9]
         $count = count($items);
         echo 'count ' . $count;
         for ($i = 0; $i < $count; $i++) {

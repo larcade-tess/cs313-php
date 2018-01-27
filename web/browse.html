@@ -1,67 +1,87 @@
-  <!DOCTYPE html>
-  <html>
-  <head>
-  	<link rel="stylesheet" type="text/css" href="css/main.css">
-  	<link href="https://fonts.googleapis.com/css?family=Great+Vibes|Slabo+27px" rel="stylesheet">
-  	<title>Tess Larcade CS313</title>
-  </head>
-  <body>
-  	<header>
-  		<div class='headcont'>
-  			<div class='header'>
-  				<h1>Tess Larcade</h1>
-  			</div>
-  		</div>
-  		<nav>
-  			<ul>
-  				<li>
-  					<a href='index.html'>Home</a>
-  				</li>
-  				<li>
-  					<a href='links.html'>Links</a>
-  				</li>
-          <li>
-            <a href='viewCart.php'>View Cart</a>
-          </li>
-  			</ul>
-  		</nav>
-  	</header>
-  	<main>
-      <div class='grid'>
-        <div class='one'><a href="https://placeholder.com"><img src="http://via.placeholder.com/150x150"></a>
-          <button class='additem' onclick="addItem('one')">Add Item</button>
-        </div>
-        <div class='two'><a href="https://placeholder.com"><img src="http://via.placeholder.com/150x150"></a> 
-          <button class='additem' onclick="addItem('two')">Add Item</button> 
-        </div>
-        <div class='three'><a href="https://placeholder.com"><img src="http://via.placeholder.com/150x150"></a>
-        <button class='additem' onclick="addItem('three')">Add Item</button></div>
+<?php
+$items = [
+  {
+    id: 132,
+    imgUrl: 'http://via.placeholder.com/150x150'
+  },
+  {
+    id: 243,
+    imgUrl: 'http://via.placeholder.com/150x150'
+  },
+  {
+    id: 225,
+    imgUrl: 'http://via.placeholder.com/150x150'
+  },
+  {
+    id: 275,
+    imgUrl: 'http://via.placeholder.com/150x150'
+  },
+  {
+    id: 374,
+    imgUrl: 'http://via.placeholder.com/150x150'
+  },
+  {
+    id: 256,
+    imgUrl: 'http://via.placeholder.com/150x150'
+  },
+  {
+    id: 104,
+    imgUrl: 'http://via.placeholder.com/150x150'
+  },
+  {
+    id: 197,
+    imgUrl: 'http://via.placeholder.com/150x150'
+  },
+  {
+    id: 309,
+    imgUrl: 'http://via.placeholder.com/150x150'
+  }
+];
+?>
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" type="text/css" href="css/main.css">
+ <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Slabo+27px" rel="stylesheet">
+ <title>Tess Larcade CS313</title>
+</head>
+<body>
+ <header>
+  <div class='headcont'>
+   <div class='header'>
+    <h1>Tess Larcade</h1>
+  </div>
+</div>
+<nav>
+ <ul>
+  <li>
+   <a href='index.html'>Home</a>
+ </li>
+ <li>
+   <a href='links.html'>Links</a>
+ </li>
+ <li>
+  <a href='viewCart.php'>View Cart</a>
+</li>
+</ul>
+</nav>
+</header>
+<main>
+  <div class='grid'>
+    <?php
+    $count = count($items);
+    for ($i = 0; $i < $count; $i++){
+      $itemDiv = "<div>" . $items[$i].imgURL . "</div>";
+      $itemDiv .= "<div><input type='button' value='Add' onclick='addItem(" . $items[$i].id . ")'></div>";
+      echo $itemDiv;
+    }
+    ?>
 
-
-        <div class='four'><a href="https://placeholder.com"><img src="http://via.placeholder.com/150x150"></a>
-          <button class='additem' onclick="addItem('four')">Add Item</button>
-        </div>
-        <div class='five'><a href="https://placeholder.com"><img src="http://via.placeholder.com/150x150"></a>
-          <button class='additem' onclick="addItem('five')" >Add Item
-          </button>
-        </div>
-        <div class='six'><a href="https://placeholder.com"><img src="http://via.placeholder.com/150x150"></a>
-          <button class='additem' onclick="addItem('six')">Add Item</button>
-        </div>
-        <div class='seven'><a href="https://placeholder.com"><img src="http://via.placeholder.com/150x150"></a>
-          <button class='additem' onclick="addItem('seven')">Add Item</button>
-        </div>
-        <div class='eight'><a href="https://placeholder.com"><img src="http://via.placeholder.com/150x150"></a>
-          <button class='additem' onclick="addItem('eight')">Add Item</button>
-        </div>
-        <div class='nine'><a href="https://placeholder.com"><img src="http://via.placeholder.com/150x150"></a>
-          <button class='additem' onclick="addItem('nine')">Add Item</button>
-        </div>
-      </div>
-    </main>
-    <footer>
-     &copy; Tess Larcade 2018
-   </footer>
-   <script src="cart.js"></script>
- </body>
- </html>
+  </div>
+</main>
+<footer>
+ &copy; Tess Larcade 2018
+</footer>
+<script src="cart.js"></script>
+</body>
+</html>

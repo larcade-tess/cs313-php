@@ -1,16 +1,4 @@
-var items = {
-	'one': 1,
-	'two': 2,
-	'three': 3,
-	'four': 4,
-	'five': 5,
-	'six': 6,
-	'seven': 7,
-	'eight': 8,
-	'nine': 9
-};
-
-function addItem(item) {
+function addItem(id) {
 	var xhttp = new XMLHttpRequest();
 	xhttp.onreadystatechange = function() {
 		if (this.readyState == 4) {
@@ -23,7 +11,7 @@ function addItem(item) {
 	};
 	xhttp.open("POST", "https://calm-wave-20284.herokuapp.com/cart.php", true);
 	xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-	xhttp.send('item=' + items[item]);
+	xhttp.send('id=' + id);
 }
 
 function removeItem(item) {
@@ -40,6 +28,5 @@ function removeItem(item) {
 	};
 	xhttp.open("POST", "https://calm-wave-20284.herokuapp.com/removeFromCart.php", true);
 	xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-//	xhttp.send('item=' + items[item]);
 	xhttp.send('item=' + item);
 }
