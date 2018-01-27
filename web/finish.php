@@ -28,20 +28,20 @@
       <div>
         <?php 
 
-        echo $_POST['fName'];
-        echo $_POST['lName']; 
-        echo $_POST['address'];
-        echo $_POST['city'];
-        echo $_POST['state']; 
-        echo $_POST['zip']; 
-//        $info = $_POST['fName'];
-//        $info .= '\n' . $_POST['lName']; 
-//        $info .= '\n' . $_POST['address'];
-//        $info .= '\n' . $_POST['city'];
-//        $info .= '\n' . $_POST['state']; 
-//        $info .= '\n' . $_POST['zip']; 
-//        $info_clean = htmlspecialchars($info);
-//        echo $info_clean;
+        // echo $_POST['fName'];
+        // echo $_POST['lName']; 
+        // echo $_POST['address'];
+        // echo $_POST['city'];
+        // echo $_POST['state']; 
+        // echo $_POST['zip']; 
+       $info = $_POST['fName'];
+       $info .= '\n' . $_POST['lName']; 
+       $info .= '\n' . $_POST['address'];
+       $info .= '\n' . $_POST['city'];
+       $info .= '\n' . $_POST['state']; 
+       $info .= '\n' . $_POST['zip']; 
+       $info_clean = htmlspecialchars($info);
+       echo $info_clean;
         ?> 
     </div>
   </main>
