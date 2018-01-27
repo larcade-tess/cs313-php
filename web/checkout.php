@@ -44,11 +44,11 @@
           <h3>Zip</h3>
           <input type='zip'>
           <br>
+          <h3>Complete Purchase</h3>
           <input type='submit'>
         </form>
       </div>
       <a class = 'bottomlink' href='viewCart.php'>Back to Cart</a>
-      <a class = 'bottomlink' href='finish.php'>Complete Purchase</a>
     </main>
     <footer>
      &copy; Tess Larcade 2018
