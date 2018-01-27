@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 if (!isset($_SESSION['items'])) {
 	$_SESSION['items'] = array();
 }
