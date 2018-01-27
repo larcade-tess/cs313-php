@@ -52,7 +52,7 @@
     <div><img src="img/turqsilbrace.jpg">
     <button class='additem' onclick="addItem(232)">Add Item</button>
   </div>
-    <div><img src="img/redbeaded.jpg">
+    <div><img src="img/beaded_earrings.jpg">
     <button class='additem' onclick="addItem(385)">Add Item</button>
   </div>
 </div>
