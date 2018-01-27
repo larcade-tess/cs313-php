@@ -27,22 +27,22 @@
       <div>
         <form action='finish.php' method='post'>
           <h3>First Name</h3>
-          <input type='fName'>
+          <input type='Name' name='fName'>
           <br>
           <h3>Last Name</h3>
-          <input type='lName'>
+          <input type='Name' name='lName'>
           <br>
           <h3>Address</h3>
-          <input type='address'>
+          <input type='Address' name='address'>
           <br>
           <h3>City</h3>
-          <input type='city'>
+          <input type='City' name='city'>
           <br>
           <h3>State</h3>
-          <input type='state'>
+          <input type='State' name='state'>
           <br>
           <h3>Zip</h3>
-          <input type='zip'>
+          <input type='Zip' name='zip'>
           <br>
           <h3>Complete Purchase</h3>
           <input type='submit'>
