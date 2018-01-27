@@ -34,8 +34,8 @@
         // echo $_POST['city'];
         // echo $_POST['state']; 
         // echo $_POST['zip']; 
-       $info = $_POST['fName'];
-       $info .= "\r\n" . $_POST['lName']; 
+       $info = $_POST['fName'] ."\r\n";
+       $info .=  $_POST['lName']; 
        $info .= "\r\n" . $_POST['address'];
        $info .= "\r\n" . $_POST['city'];
        $info .= "\r\n" . $_POST['state']; 
