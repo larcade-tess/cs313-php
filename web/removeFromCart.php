@@ -17,8 +17,14 @@ else
 	{
 		if ($items[$i] === $item)
 		{
-			array_splice($_SESSION['items'], $i, 1);
-			$found = true;
+			$key = array_search($_POST['item'], $_SESSION['items']);
+			if ($key !== false)
+			{
+				unset($_SESSION['items'][$key]);
+				$_SESSION["name"] = array_values($_SESSION["name"]);
+				$found = true;
+			}
+    			// array_splice($_SESSION['items'], $i, 1);
 			break;
 		}
 	}
