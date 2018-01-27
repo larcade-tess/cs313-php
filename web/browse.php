@@ -70,8 +70,10 @@ $items = [
   <div class='grid'>
     <?php
     $count = count($items);
-    for ($i = 0; $i < $count; $i++){
-      $itemDiv = "<div>" . $items[$i].imgURL . "</div>";
+
+    for ($i = 0; $i < $count; $i++)
+    {
+      $itemDiv = "<div> <img src='" . $items[$i].imgUrl . "'> </div>";
       $itemDiv .= "<div><input type='button' value='Add' onclick='addItem(" . $items[$i].id . ")'></div>";
       echo $itemDiv;
     }
