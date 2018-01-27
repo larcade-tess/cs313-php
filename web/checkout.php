@@ -26,12 +26,24 @@
   	<main>
       <div>
         <form action='finish.php' method='post'>
+          <h3>First Name</h3>
           <input type='fName'>
+          <br>
+          <h3>Last Name</h3>
           <input type='lName'>
+          <br>
+          <h3>Address</h3>
           <input type='address'>
+          <br>
+          <h3>City</h3>
           <input type='city'>
+          <br>
+          <h3>State</h3>
           <input type='state'>
+          <br>
+          <h3>Zip</h3>
           <input type='zip'>
+          <br>
           <input type='submit'>
         </form>
       </div>
