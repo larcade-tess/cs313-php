@@ -44,6 +44,8 @@
         }
         ?>
       </div>
+      <a class = 'bottomlink' href='browse.php'>Back to Browse</a>
+      <a class = 'bottomlink' href='checkout.php'>Check Out</a>
     </main>
     <footer>
      &copy; Tess Larcade 2018
