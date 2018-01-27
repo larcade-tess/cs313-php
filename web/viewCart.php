@@ -28,9 +28,10 @@
     </header>
     <main>
       <?php
+      echo $_SESSION['items'][$i];
       $count = count($_SESSION['items']);
       for ($i = 0; $i < $count; ++$i) {
-        $itemDiv = "<div class='blah'>";
+        $itemDiv = "<div class='grid'>";
         $itemDiv .= $_SESSION['items'][$i];
         $itemDiv .= "</div>";
         echo $itemDiv;
