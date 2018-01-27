@@ -34,6 +34,7 @@
         <?php
         $items = $_SESSION['items'];
         $count = count($items);
+        echo 'count ' . $count;
         for ($i = 0; $i < $count; $i++) {
           $itemDiv = "<div style='display: flex; border: solid 1px black; border-radius: 6px; align-items: center;'>";
           $itemDiv .= "  <div style='margin: 0 0 0 10px;'>Item:</div>";
