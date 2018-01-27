@@ -1,5 +1,5 @@
 var items = {
-	'one': 'one',
+	'one': 1,
 	'two': 2,
 	'three': 3,
 	'four': 4,
@@ -22,6 +22,6 @@ function addItem(item) {
 		}
 	};
 	xhttp.open("POST", "https://calm-wave-20284.herokuapp.com/cart.php", true);
-	xhttp.send(items[item]);
+	xhttp.send('item=' + items[item]);
 }
 
