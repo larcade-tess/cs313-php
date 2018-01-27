@@ -1,7 +1,4 @@
 <?php
-session_start();
-echo "session has been started";
-
 if (!isset($_SESSION['items'])) {
 	$_SESSION['items'] = array();
 }
