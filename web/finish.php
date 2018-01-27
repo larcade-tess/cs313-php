@@ -29,11 +29,11 @@
         <?php 
 
         echo $_POST['fName'];
-        echo '\n' . $_POST['lName']; 
-        echo '\n' . $_POST['address'];
-        echo '\n' . $_POST['city'];
-        echo '\n' . $_POST['state']; 
-        echo '\n' . $_POST['zip']; 
+        echo $_POST['lName']; 
+        echo $_POST['address'];
+        echo $_POST['city'];
+        echo $_POST['state']; 
+        echo $_POST['zip']; 
 //        $info = $_POST['fName'];
 //        $info .= '\n' . $_POST['lName']; 
 //        $info .= '\n' . $_POST['address'];
