@@ -48,7 +48,7 @@
           <input type='submit'>
         </form>
       </div>
-      <a class = 'bottomlink' href='viewCart.php'>Back to Cart</a>
+<!--      <a class = 'bottomlink' href='viewCart.php'>Back to Cart</a> -->
     </main>
     <footer>
      &copy; Tess Larcade 2018
