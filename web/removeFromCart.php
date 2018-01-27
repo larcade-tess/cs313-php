@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 if (!isset($_SESSION['items']))
 {
 	echo 'Nothing in cart';
@@ -17,14 +19,16 @@ else
 	{
 		if ($items[$i] === $item)
 		{
-			$key = array_search($_POST['item'], $_SESSION['items']);
-			if ($key !== false)
-			{
-				unset($_SESSION['items'][$key]);
-				$_SESSION["name"] = array_values($_SESSION["name"]);
-				$found = true;
-			}
-    			// array_splice($_SESSION['items'], $i, 1);
+			// $key = array_search($_POST['item'], $_SESSION['items']);
+			// if ($key !== false)
+			// {
+			// 	unset($_SESSION['items'][$key]);
+			// 	$_SESSION["name"] = array_values($_SESSION["name"]);
+			// 	$found = true;
+			// }
+			array_splice($_SESSION['items'], $i, 1);
+			$found = true;
+
 			break;
 		}
 	}
