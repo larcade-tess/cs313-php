@@ -30,9 +30,9 @@
       </nav>
     </header>
     <main>
-      <div style="display: flex; flex-direction: column;">
+      <div class='grid'>
         <?php
-        $items = $_SESSION['items']; // items = [1, 6, 9]
+        $items = $_SESSION['items'];
         $count = count($items);
         echo 'count ' . $count;
         for ($i = 0; $i < $count; $i++) {

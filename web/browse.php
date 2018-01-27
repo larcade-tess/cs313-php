@@ -43,7 +43,7 @@ $items = [
 <head>
  <link rel="stylesheet" type="text/css" href="css/main.css">
  <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Slabo+27px" rel="stylesheet">
- <title>Tess Larcade CS313</title>
+ <title>Tess Larcade CS313 Shopping</title>
 </head>
 <body>
  <header>
