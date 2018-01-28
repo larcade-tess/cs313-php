@@ -47,7 +47,7 @@
           <h3>Complete Purchase</h3>
           <input type='submit'>
         </form>
-        <div>
+        <div class='padded'>
         <a class = 'bottomlink' href='checkout.php'>Back to Check Out</a>
       </div>
       </div>

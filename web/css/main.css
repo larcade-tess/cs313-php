@@ -165,8 +165,10 @@ h4 {
 }
 .bottomlink {
 	color:#110221;
-	margin:30px;
 }
 .bottomlink:hover {
 	color:#333333;
+}
+.padded {
+	padding-top:30px;
 }
