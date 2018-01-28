@@ -45,7 +45,6 @@
       $itemDiv = "<div class = 'list'>";
       $itemDiv .= "  <div> Item: </div>";
       $itemDiv .= "  <div>" . $items[$i] . "</div>";
-      $itemDiv .= "  <div><input type='button' value='Delete' onclick='removeItem(" . $items[$i] . ")'></div>";
       $itemDiv .= "</div>";
       echo $itemDiv;
     }

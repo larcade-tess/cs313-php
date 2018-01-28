@@ -20,9 +20,6 @@
      <li>
        <a href='links.html'>Links</a>
      </li>
-     <li>
-      <a href='viewCart.php'>View Cart</a>
-    </li>
   </ul>
 </nav>
 </header>
@@ -56,6 +53,7 @@
     <button class='additem' onclick="addItem(385)">Add Item</button>
   </div>
 </div>
+<a class = 'bottomlink'href='viewCart.php'>View Cart</a>
 </main>
 <footer>
  &copy; Tess Larcade 2018
