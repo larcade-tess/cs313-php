@@ -18,7 +18,7 @@
 
 		<div>
 			<?php
-			$statement = $db->query('SELECT first_name FROM contact');
+			$statement = $db->query('SELECT first_name, phone FROM contact');
 			while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 				{
 					echo '<p>' . $row[first_name] . $row[phone] . '</p>';
