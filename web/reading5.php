@@ -15,6 +15,10 @@
 		<div>
 			<?php
 			$statement = $db->query('SELECT first_name FROM contact');
+			while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+				{
+					echo '<p>' . $row[first_name] . '</p>';
+				}
 				?>
 			</div>
 		</main>
