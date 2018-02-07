@@ -17,11 +17,17 @@ $db = get_db();
 		</div>
 
 		<div>
-<h3>Test</h3>
-		</div>
-	</main>
-	<footer>
-		&copy; Tess Larcade 2018
-	</footer>
-</body>
-</html>
+			<?php
+			$statement = $db->query('SELECT first_name FROM contact');
+			while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+				{
+					echo '<p>' . $row[first_name]
+				}
+				?>
+			</div>
+		</main>
+		<footer>
+			&copy; Tess Larcade 2018
+		</footer>
+	</body>
+	</html>
