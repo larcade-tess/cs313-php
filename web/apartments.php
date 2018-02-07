@@ -18,10 +18,10 @@
 
 		<div>
 			<?php
-			$statement = $db->query('SELECT first_name, phone FROM contact');
+			$statement = $db->query('SELECT rented, location, price FROM apartments');
 			while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 				{
-					echo '<p>' . $row[first_name] . $row[phone] . '</p>';
+					echo '<div class='. '"' . $row[rented] . '"' . '>' '</div>';
 				}
 				?>
 			</div>
