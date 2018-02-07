@@ -1,6 +1,6 @@
 <?php
-	require_once 'connecttodb.php';
-	$db = connect();
+require_once 'connecttodb.php';
+$db = connect();
 ?>
 <!DOCTYPE html>
 <html>
@@ -21,7 +21,14 @@
 			$statement = $db->query('SELECT rented, location, price FROM apartments');
 			while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 				{
-					echo '<div class='. '"' . $row[rented] . '"' . '>' '</div>';
+					if ($row[rented] == false)
+					{
+						echo '<div class="apartment">' . $row[location] . '</div>';
+					} 
+					else 
+					{
+						echo '<div class="apartment">' . 'No available apartments' . '</div>';
+					}
 				}
 				?>
 			</div>
