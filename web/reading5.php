@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 
 $dbUrl = getenv('DATABASE_URL');
 
@@ -29,7 +29,7 @@ catch (PDOException $ex) {
 	die();
 }
 
-?>
+?> -->
 
 <!DOCTYPE html>
 <html>
@@ -41,7 +41,7 @@ catch (PDOException $ex) {
 
 		<h1>Apartments</h1>
 
-		<?php
+<!-- 		<?php
 
 		foreach ($db->query('SELECT now()') as $row)
 		{
@@ -60,7 +60,7 @@ catch (PDOException $ex) {
 				echo $row['apartment'] . ' ' . $row['contact'] 
 				echo '</p>';
 			}
-			?>
+			?> -->
 		</div>
 
 	</body>
