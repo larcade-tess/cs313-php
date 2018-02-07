@@ -19,7 +19,6 @@ function removeItem(item) {
 	xhttp.onreadystatechange = function() {
 		if (this.readyState === 4) {
 			if (this.status === 200 || this.status === 204) {
-//				console.log('ajax response', this.responseText);
 				console.log('Removed item', item, 'successfully');
 			} else {
 				console.log('Failed to remove item', item);
