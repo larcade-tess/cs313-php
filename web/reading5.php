@@ -1,3 +1,7 @@
+<?php
+	require_once 'connecttodb.php';
+	$db = connect();
+?>
 <!DOCTYPE html>
 <html>
 <head>
