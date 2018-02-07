@@ -1,7 +1,7 @@
-<!-- <?php
+<?php
 requore_once 'connecttodb.php';
 $db = get_db();
-?> -->
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,16 +13,17 @@ $db = get_db();
 	<main>
 		<div>
 			<h1>Apartments</h1>
+		
 		</div>
 
 		<div>
-			<?php
+<!-- 			<?php
 			$statement = $db->query('SELECT first_name FROM contact');
 			while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 				{
 					echo '<p>' . $row[first_name]
 				}
-				?>
+				?> -->
 		</div>
 	</main>
 	<footer>
