@@ -1,26 +1,32 @@
 <?php
-requore_once 'connecttodb.php'
+requore_once 'connecttodb.php';
 $db = get_db();
 ?>
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Apartments</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Great+Vibes|Slabo+27px" rel="stylesheet">
+	<!-- <script src="connecttodb.php"></script> -->
 </head>
 <body>
-	<div>
-		<h1>Apartments</h1>
-	</div>
+	<main>
+		<div>
+			<h1>Apartments</h1>
+		</div>
 
-	<div>
-		<?php
-		$statement = $db->query('SELECT first_name FROM contact')
-		while ($row = $statement->fetch(PDO::FETCH_ASSOC))
-			{
-				echo '<p>' . $row[first_name]
-			}
-		?>
-	</div>
-
+		<div>
+			<?php
+			$statement = $db->query('SELECT first_name FROM contact');
+			while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+				{
+					echo '<p>' . $row[first_name]
+				}
+				?>
+		</div>
+	</main>
+	<footer>
+		&copy; Tess Larcade 2018
+	</footer>
 </body>
 </html>
