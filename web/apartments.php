@@ -7,7 +7,6 @@ $db = connect();
 <head>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link href="https://fonts.googleapis.com/css?family=Great+Vibes|Slabo+27px" rel="stylesheet">
-	<script src="connecttodb.js"></script>
 </head>
 <body>
 	<main>
@@ -24,11 +23,9 @@ $db = connect();
 					if ($row[rented] == false)
 					{
 						echo '<div class="apartment">' . $row[location] . '</div>';
+						echo '<div class="location">' . $row[location] . '</div>';
+
 					} 
-					else 
-					{
-						echo '<div class="apartment">' . 'No available apartments' . '</div>';
-					}
 				}
 				?>
 			</div>
