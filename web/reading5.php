@@ -1,7 +1,7 @@
-<?php
+<!-- <?php
 requore_once 'connecttodb.php';
 $db = get_db();
-?>
+?> -->
 <!DOCTYPE html>
 <html>
 <head>
