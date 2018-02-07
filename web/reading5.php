@@ -13,7 +13,9 @@
 		</div>
 
 		<div>
-
+			<?php
+			$statement = $db->query('SELECT first_name FROM contact');
+				?>
 			</div>
 		</main>
 		<footer>
