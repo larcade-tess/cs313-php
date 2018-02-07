@@ -1,6 +1,5 @@
-
-function connect() {
   <?php
+function connect() {
   $db = NULL;
   try {
     $dbUrl = getenv('DATABASE_URL');
@@ -28,6 +27,6 @@ $dbopts = parse_url($dbUrl);
     die();
   }
   return $db;
-  ?>
 }
 connect();
+  ?>
