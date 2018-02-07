@@ -1,7 +1,3 @@
-<?php
-require_once 'connecttodb.php';
-$db = get_db();
-?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,5 +25,6 @@ $db = get_db();
 		<footer>
 			&copy; Tess Larcade 2018
 		</footer>
+		<script src="connecttodb.js"></script>
 	</body>
 	</html>

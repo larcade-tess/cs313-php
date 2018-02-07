@@ -1,15 +1,16 @@
-<?php
+
 function connect() {
+  <?php
   $db = NULL;
   try {
     $dbUrl = getenv('DATABASE_URL');
 
     if (empty($dbUrl)) {
  // example localhost configuration URL with postgres username and a database called cs313db
-      $dbUrl = "postgres://postgres:password@127.0.0.1:5432/Scriptures";
-    }
+ $dbUrl = "postgres://postgres:password@127.0.0.1:5432/Scriptures";
+}
 
-    $dbopts = parse_url($dbUrl);
+$dbopts = parse_url($dbUrl);
     // echo "<p>$dbUrl</p>\n\n";
 
     $dbHost = $dbopts["host"];
@@ -27,6 +28,6 @@ function connect() {
     die();
   }
   return $db;
+  ?>
 }
 connect();
-?>
