@@ -8,6 +8,13 @@ a {
 	padding:15px;
 	font-family: serif;
 }
+ul {
+	padding:5px;
+}
+li {
+	list-style:none;
+	display:inline;
+}
 #apartment1 {
 	background-image:url("home1.jpg");
 	height:100px;
