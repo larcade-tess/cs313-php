@@ -10,13 +10,28 @@ $db = connect();
 	<link href="https://fonts.googleapis.com/css?family=Great+Vibes|Slabo+27px" rel="stylesheet">
 </head>
 <body>
+	<header>
+		<h1>JAP Property Management</h1>
+		<nav>
+			<ul>
+				<li>
+					<a href='apply.html'>Apply</a>
+				</li>
+				<li>
+					<a href='contact.html'>Contact Us</a>
+				</li>
+				<li>
+					<a href='about.html'>About Us</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
 	<main>
 		<div>
-			<h1>Apartments</h1>
-
+			<h3>Apartments</h3>
 		</div>
 
-		<div>
+		<div class = container>
 			<?php
 			$dbinfo = $db->query('SELECT apartment_id, rented, location, price FROM apartment');
 			while ($row = $dbinfo->fetch(PDO::FETCH_ASSOC))
