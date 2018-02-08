@@ -30,19 +30,19 @@ h1 {
 	padding:10px 60px;
 }
 #apartment1 {
-	background-image:url("https://via.placeholder.com/100x100");
-	height:100px;
-	width:100px;
+	background-image:url("15th_street.jpg");
+	height:200px;
+	width:200px;
 }
 #apartment2 {
-	background-image:url("https://via.placeholder.com/100x100");
-	height:100px;
-	width:100px;
+	background-image:url("https://via.placeholder.com/200x200");
+	height:200px;
+	width:200px;
 }
 #apartment3 {
-	background-image:url("https://via.placeholder.com/100x100");
-	height:100px;
-	width:100px;
+	background-image:url("https://via.placeholder.com/200x200");
+	height:200px;
+	width:200px;
 }
 .apartment {
 
