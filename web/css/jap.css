@@ -1,6 +1,7 @@
 body {
 	background-image:url('dust_scratches.png');
 	background-repeat:repeat;
+	margin:0px;
 }
 nav {
 	background-color:silver;
@@ -18,6 +19,9 @@ ul {
 li {
 	list-style:none;
 	display:inline;
+}
+h1 {
+	padding-left:15px;
 }
 .container {
 	padding:50px 10px;
@@ -38,8 +42,11 @@ li {
 	width:100px;
 }
 .apartment {
-	display:inline;
+
 }
 .location {
-	display:inline;
+
+}
+.aptinfo {
+	
 }

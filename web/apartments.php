@@ -38,9 +38,9 @@ $db = connect();
 				{
 					if ($row[rented] == false)
 					{
-						echo '<div class="apartmentimg" id="apartment' . $row[apartment_id] . '">' . '</div>';
+						echo '<div class = "aptinfo"> <div class="apartmentimg" id="apartment' . $row[apartment_id] . '">' . '</div>';
 						echo '<div class="apartment">' . $row[location] . '</div>';
-						echo '<div class="location">' . $row[price] . ' Monthly </div>';
+						echo '<div class="location">' . $row[price] . ' Monthly </div> </div>';
 					} 
 				}
 				?>
