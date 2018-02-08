@@ -1,10 +1,9 @@
-
-header {
+body {
 	background-image:url('dust_scratches.png');
 	background-repeat:repeat;
 }
 nav {
-	background-color:gold;
+	background-color:silver;
 }
 a {
 	text-decoration:none;
@@ -20,8 +19,11 @@ li {
 	list-style:none;
 	display:inline;
 }
+.container {
+	padding:50px 10px;
+}
 #apartment1 {
-	background-image:url("home1.jpg");
+	background-image:url("https://via.placeholder.com/100x100");
 	height:100px;
 	width:100px;
 }
@@ -34,4 +36,10 @@ li {
 	background-image:url("https://via.placeholder.com/100x100");
 	height:100px;
 	width:100px;
+}
+.apartment {
+	display:inline;
+}
+.location {
+	display:inline;
 }
