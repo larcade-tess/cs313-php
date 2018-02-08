@@ -3,6 +3,9 @@ body {
 	background-repeat:repeat;
 	margin:0px;
 }
+main {
+	padding:0px, 20px;
+}
 nav {
 	background-color:silver;
 }
@@ -48,5 +51,5 @@ h1 {
 
 }
 .aptinfo {
-	
+
 }
