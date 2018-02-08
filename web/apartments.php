@@ -25,7 +25,7 @@ $db = connect();
 					{
 						echo '<div class="apartmentimg" id="' . $row[apartment_id] . '">' . '</div>';
 						echo '<div class="apartment">' . $row[location] . '</div>';
-						echo '<div class="location">' . $row[price] . '</div>';
+						echo '<div class="location">' . $row[price] . ' Monthly </div>';
 
 					} 
 				}
