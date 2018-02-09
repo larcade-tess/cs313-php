@@ -5,7 +5,7 @@ function connect() {
     $dbUrl = getenv('DATABASE_URL');
 
     if (empty($dbUrl)) {
- $dbUrl = "postgres://postgres:password@127.0.0.1:5432/JAPdb";
+ $dbUrl = "postgres://limited:password@127.0.0.1:5432/JAPdb";
 }
 
 $dbopts = parse_url($dbUrl);
