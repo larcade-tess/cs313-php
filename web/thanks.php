@@ -38,9 +38,9 @@ $db = connect();
 		</div>
 		<div>
 			<?php 
-			$info = "Thanks for contacting us" . $_POST['fname'] . ". ";
-			$info .= "We will be in touch shortly" . '\n';
-			$info .= "By phone:" . $_POST['phone'] . '\n';
+			$info = "Thanks for contacting us" . $_POST['fName'] . ". ";
+			$info .= "We will be in touch shortly" . '/n';
+			$info .= "By phone:" . $_POST['phone'] . '/n';
 			$info .= "Or Email:" . $_POST['email'];
 			$info_clean = htmlspecialchars($info);
 			echo $info_clean;
