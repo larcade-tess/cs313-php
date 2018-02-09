@@ -41,21 +41,21 @@ $db = connect();
 
 			<div class = container>
 
-				<div class="grid-img"><img src="img/15th street 1.jpg"></div>
-				<div class="grid-img"><img src="img/15th street 2.jpg"></div>
-				<div class="grid-img"><img src="img/15th street 3.jpg"></div>
-				<div class="grid-img"><img src="img/15th street 4.jpg"></div>
-				<div class="grid-img"><img src="img/15th street 5.jpg"></div>
-				<div class="grid-img"><img src="img/15th street 6.jpg"></div>
-				<div class="grid-img"><img src="img/15th street 7.jpg"></div>
-				<div class="grid-img"><img src="img/15th street 8.jpg"></div>
-				<div class="grid-img"><img src="img/15th street 9.jpg"></div>
-				<div class="grid-img"><img src="img/15th street 10.jpg"></div>
-				<div class="grid-img"><img src="img/15th street 11.jpg"></div>
-				<div class="grid-img"><img src="img/15th street 12.jpg"></div>
-				<div class="grid-img"><img src="img/15th street 13.jpg"></div>
-				<div class="grid-img"><img src="img/15th street 14.jpg"></div>
-				<div class="grid-img"><img src="img/15th street 15.jpg"></div>
+				<div class="grid-img"><img class ="aptimg" src="img/15th street 1.jpg"></div>
+				<div class="grid-img"><img class ="aptimg" src="img/15th street 2.jpg"></div>
+				<div class="grid-img"><img class ="aptimg" src="img/15th street 3.jpg"></div>
+				<div class="grid-img"><img class ="aptimg" src="img/15th street 4.jpg"></div>
+				<div class="grid-img"><img class ="aptimg" src="img/15th street 5.jpg"></div>
+				<div class="grid-img"><img class ="aptimg" src="img/15th street 6.jpg"></div>
+				<div class="grid-img"><img class ="aptimg" src="img/15th street 7.jpg"></div>
+				<div class="grid-img"><img class ="aptimg" src="img/15th street 8.jpg"></div>
+				<div class="grid-img"><img class ="aptimg" src="img/15th street 9.jpg"></div>
+				<div class="grid-img"><img class ="aptimg" src="img/15th street 10.jpg"></div>
+				<div class="grid-img"><img class ="aptimg" src="img/15th street 11.jpg"></div>
+				<div class="grid-img"><img class ="aptimg" src="img/15th street 12.jpg"></div>
+				<div class="grid-img"><img class ="aptimg" src="img/15th street 13.jpg"></div>
+				<div class="grid-img"><img class ="aptimg" src="img/15th street 14.jpg"></div>
+				<div class="grid-img"><img class ="aptimg" src="img/15th street 15.jpg"></div>
 
 			</div>
 		</main>
