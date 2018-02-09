@@ -37,7 +37,7 @@ $db = connect();
 			<h3>Schedule a Showing</h3>
 		</div>
 		<div>
-			<form action='thanks.html' method='post'>
+			<form action='thanks.php' method='post'>
 				<h4>First Name</h4>
 				<input type='Name' name='fName' required>
 				<br>
