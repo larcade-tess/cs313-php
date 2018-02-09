@@ -47,6 +47,13 @@ h1 {
 .location {
 
 }
+.locationpg {
+padding:30px;
+text-align:center;
+}
+.pricepg {
+text-align:center;
+}
 .aptinfo {
 
 }

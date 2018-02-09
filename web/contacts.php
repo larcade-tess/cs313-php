@@ -15,10 +15,13 @@ $db = connect();
 		<nav>
 			<ul>
 				<li>
+					<a href='apartments.php'>Apartments</a>
+				</li>
+				<li>
 					<a href='apply.html'>Apply</a>
 				</li>
 				<li>
-					<a href='contacts.html'>Contacts</a>
+					<a href='contacts.php'>Contacts</a>
 				</li>
 				<li>
 					<a href='#'>About Us</a>
@@ -28,7 +31,7 @@ $db = connect();
 	</header>
 	<main>
 		<div>
-			<h3>Apartments</h3>
+			<h3>Contacts</h3>
 		</div>
 		<div>
 			<p>Make this page only visable to the owners</p>
