@@ -29,7 +29,7 @@ $db = connect();
 	<main>
 		<div>
 			<?php
-			$dbinfo = $db->query('SELECT location FROM apartment WHERE apartment_id == 1');
+			$dbinfo = $db->query('SELECT location FROM apartment WHERE apartment_id = 1');
 			while ($row = $dbinfo->fetch(PDO::FETCH_ASSOC))
 				{
 					echo '<div class = "aptinfo">';
