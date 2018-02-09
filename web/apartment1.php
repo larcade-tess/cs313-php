@@ -29,11 +29,11 @@ $db = connect();
 	<main>
 		<div>
 			<?php
-			$dbinfo = $db->query('SELECT location FROM apartment WHERE apartment_id = 1');
+			$dbinfo = $db->query('SELECT location, price FROM apartment WHERE apartment_id = 1');
 			while ($row = $dbinfo->fetch(PDO::FETCH_ASSOC))
 				{
 					echo '<div class = "aptinfo">';
-					echo '<div class="apartment"><a href="apartment' . $row[apartment_id] . '.php">' . $row[location] . '</a></div>';
+					echo '<div class="apartment">' . $row[location] . '</a></div>';
 					echo '<div class="location">' . $row[price] . ' Monthly </div> </div>';
 				}
 				?>
