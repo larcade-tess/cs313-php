@@ -57,3 +57,6 @@ h1 {
 	height:auto;
 	width:400px;
 }
+.container {
+	display: grid;
+}
