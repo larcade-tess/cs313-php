@@ -30,6 +30,9 @@ li {
 h1 {
 	padding-left:15px;
 }
+form {
+	margin: 20px;
+}
 #apartment1 {
 	background-image:url("15th_street.jpg");
 	height:200px;
