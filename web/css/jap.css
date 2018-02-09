@@ -60,3 +60,7 @@ h1 {
 .container {
 	display: inline-grid;
 }
+.grid-img1 {
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
