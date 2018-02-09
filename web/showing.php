@@ -51,7 +51,7 @@ $db = connect();
 				<input email='Email' name='email' required>
 				<br>
 				<h4>Comments</h4>
-				<textarea rows="4" cols="50"></textarea>
+				<textarea rows="4" cols="50" name='comments'></textarea>
 				<br>
 				<input type='submit'>
 			</form>

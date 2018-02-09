@@ -36,9 +36,22 @@ $db = connect();
 		<div>
 			<h3>Thank You</h3>
 		</div>
+		<div>
+			<?php 
+			$info = $_POST['fname'];
+			$info .= "\r\n" . $_POST['lName']; 
+			$info .= "\r\n" . $_POST['phone'];
+			$info .= "\r\n" . $_POST['email'];
+			$info .= "\r\n" . $_POST['comments']; 
+			$info_clean = htmlspecialchars($info);
+			echo $info_clean;
+			?>
+		</div>
 
 		<div class = container>
-			<p>Thanks for contacting us, we will respond shortly.</p>
+			<p>Thanks for contacting us <?php $_POST['fname']?>, we will respond shortly. <br>
+				By phone: <?php $_POST['phone']?> <br>
+				Or Email: <?php $_POST['email']?></p>
 		</div>
 	</main>
 	<footer>
