@@ -18,7 +18,7 @@ $db = connect();
 					<a href='apply.html'>Apply</a>
 				</li>
 				<li>
-					<a href='#'>Contact Us</a>
+					<a href='contacts.html'>Contacts</a>
 				</li>
 				<li>
 					<a href='#'>About Us</a>

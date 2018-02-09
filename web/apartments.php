@@ -18,10 +18,10 @@ $db = connect();
 					<a href='apply.html'>Apply</a>
 				</li>
 				<li>
-					<a href='contact.html'>Contact Us</a>
+					<a href='contacts.html'>Contacts</a>
 				</li>
 				<li>
-					<a href='about.html'>About Us</a>
+					<a href='#'>About Us</a>
 				</li>
 			</ul>
 		</nav>
@@ -39,7 +39,7 @@ $db = connect();
 					if ($row[rented] == false)
 					{
 						echo '<div class = "aptinfo"> <div class="apartmentimg" id="apartment' . $row[apartment_id] . '">' . '</div>';
-						echo '<div class="apartment">' . $row[location] . '</div>';
+						echo '<div class="apartment"><a href="apartment' . $row[apartment_id] . '.php">' . $row[location] . '</a></div>';
 						echo '<div class="location">' . $row[price] . ' Monthly </div> </div>';
 					} 
 				}
