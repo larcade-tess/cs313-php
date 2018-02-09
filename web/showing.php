@@ -34,31 +34,31 @@ $db = connect();
 	</header>
 	<main>
 		<div>
-			<h3>Contacts</h3>
+			<h3>Schedule a Showing</h3>
 		</div>
 		<div>
-			<p>Make this page only visable to the owners</p>
+			<form action='' method='post'>
+				<h4>First Name</h4>
+				<input type='Name' name='fName'>
+				<br>
+				<h4>Last Name</h4>
+				<input type='Name' name='lName'>
+				<br>
+				<h4>Phone Number</h4>
+				<input phone='Phone' name='phone'>
+				<br>
+				<h4>Email Address</h4>
+				<input email='Email' name='email'>
+				<br>
+				<h4>Comments</h4>
+				<textarea rows="4" cols="50"></textarea>
+				<br>
+				<input type='submit'>
+			</form>
 		</div>
-
-		<div class = container>
-			<?php
-			$dbinfo = $db->query('SELECT first_name, last_name, phone, email FROM contact');
-			while ($row = $dbinfo->fetch(PDO::FETCH_ASSOC))
-				{
-					if ($row[rented] == false)
-					{
-						echo '<div class = "contactinfo"> 
-						<div class="fname">' . $row[first_name] . '</div>';
-						echo '<div class="lname">' . $row[last_name] . '</div>';
-						echo '<div class="phone">' . $row[phone] . '</div>';
-						echo '<div class="email">' . $row[email] . ' </div> </div>';
-					} 
-				}
-				?>
-			</div>
-		</main>
-		<footer>
-			&copy; Tess Larcade 2018
-		</footer>
-	</body>
-	</html>
+	</main>
+	<footer>
+		&copy; Tess Larcade 2018
+	</footer>
+</body>
+</html>
