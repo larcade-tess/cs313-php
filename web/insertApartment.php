@@ -42,6 +42,9 @@ $db = connect();
 		$details = $_POST['details'];
 		$rented = $_POST['rented'];
 		$comments = $_POST['comments'];
+		$sqft = $_POST['sqft'];
+		$bed = $_POST['bed'];
+		$bath = $_POST['bath'];
 		?>
 		<div>
 			<?php
@@ -49,7 +52,7 @@ $db = connect();
 			{
 	// Add the Scripture
 	// We do this by preparing the query with placeholder values
-				$query = 'INSERT INTO apartment (rented, location, price, details, comments) VALUES(:rented, :location, :price, :details, :comments)';
+				$query = 'INSERT INTO apartment (rented, location, price, details, comments, sqft, bed, bath) VALUES(:rented, :location, :price, :details, :comments, :sqft, :bed, :bath)';
 				$statement = $db->prepare($query);
 	// Now we bind the values to the placeholders. This does some nice things
 	// including sanitizing the input with regard to sql commands.
@@ -58,6 +61,9 @@ $db = connect();
 				$statement->bindValue(':price', $price);
 				$statement->bindValue(':details', $details);
 				$statement->bindValue(':comments', $comments);
+				$statement->bindValue(':sqft', $sqft);
+				$statement->bindValue(':bed', $bed);
+				$statement->bindValue(':bath', $bath);
 
 				$statement->execute();
 	// get the new id

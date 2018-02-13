@@ -44,14 +44,35 @@ $db = connect();
 				<h4>Price</h4>
 				<input type='Text' name='price' required>
 				<br>
-				<h4>Details</h4>
-				<textarea rows="4" cols="50" name="details" required></textarea>
+				<h4>Bed</h4>
+				<select name='bed' required>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+				</select>
+				<br>
+				<h4>Bath</h4>
+				<select name='bath' required>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+				</select>
+				<br>
+				<h4>Square Footage</h4>
+				<input type='Text' name='sqft' required>
 				<br>
 				<h4>Apartment is rented</h4>
 				<select name='rented'>
 					<option value="true">Rented</option>
 					<option value="false">Not Rented</option>
 				</select>
+				<br>
+				<h4>Details</h4>
+				<textarea rows="4" cols="50" name="details" required></textarea>
 				<br>
 				<h4>Comments</h4>
 				<textarea rows="4" cols="50" name='comments'></textarea>
