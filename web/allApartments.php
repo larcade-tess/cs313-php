@@ -41,7 +41,7 @@ $db = connect();
 
 			$dbinfo = $db->query('SELECT apartment_id, rented, location, price, details, comments, sqft, bed, bath FROM apartment');
 
-			echo '<div class="column1"><h3>ID</h4></div> 
+			echo '<div class="column1"><h4>ID</h4></div> 
 			<div class="column2"><h4>Rented</h4></div> 
 			<div class="column3"><h4>Address</h4></div>
 			<div class="column4"><h4>Price</h4></div>
