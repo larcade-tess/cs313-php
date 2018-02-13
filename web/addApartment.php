@@ -39,7 +39,7 @@ $db = connect();
 		<div>
 			<form action='insertApartment.php' method='post'>
 				<h4>Address</h4>
-				<input type='Address' name='address' required>
+				<input type='Address' name='location' required>
 				<br>
 				<h4>Price</h4>
 				<input type='Text' name='price' required>
