@@ -48,7 +48,7 @@ $db = connect();
 				<textarea rows="4" cols="50" name="details" required></textarea>
 				<br>
 				<h4>Apartment is rented</h4>
-				<input  type='checkbox' name='rented' value='false'>
+				<input  type='checkbox' name='rented' value=0>
 				<br>
 				<h4>Comments</h4>
 				<textarea rows="4" cols="50" name='comments'></textarea>
