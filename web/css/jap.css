@@ -38,16 +38,16 @@ form {
 	height:200px;
 	width:200px;
 }
-#apartment12 {
-		background-image:url("http://via.placeholder.com/200x200");
+#apartment13 {
+	background-image:url("http://via.placeholder.com/200x200");
 	height:200px;
 	width:200px;
 }
 .locationpg {
-text-align:center;
+	text-align:center;
 }
 .pricepg {
-text-align:center;
+	text-align:center;
 }
 .aptimg {
 	height:auto;
