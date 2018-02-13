@@ -57,8 +57,14 @@ $db = connect();
 				<h4>Bath</h4>
 				<select name='bath' required>
 					<option value="1">1</option>
+					<option value="1.5">1.5</option>
+					<option value="1.75">1.75</option>
 					<option value="2">2</option>
+					<option value="2.5">2.5</option>
+					<option value="2.75">2.75</option>
 					<option value="3">3</option>
+					<option value="3.5">3.5</option>
+					<option value="3.75">3.75</option>
 					<option value="4">4</option>
 				</select>
 				<br>
