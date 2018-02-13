@@ -61,7 +61,7 @@ $db = connect();
 					<div class="column6">' . $row[bed] . '</div>
 					<div class="column7">' . $row[bath] . '</div>
 					<div class="column8">' . $row[details] . '</div>
-					<div class="column9">' . $row[comments] . '</div>;
+					<div class="column9">' . $row[comments] . '</div>';
 				}
 				?> 
 			</div>
