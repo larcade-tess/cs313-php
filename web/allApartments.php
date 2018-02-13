@@ -41,15 +41,15 @@ $db = connect();
 
 			$dbinfo = $db->query('SELECT apartment_id, rented, location, price, details, comments, sqft, bed, bath FROM apartment');
 
-			echo '<div class="column1"><h3>ID</h3></div> 
-			<div class="column2"><h3>Rented</h3></div> 
-			<div class="column3"><h3>Address</h3></div>
-			<div class="column4"><h3>Price</h3></div>
-			<div class="column5"><h3>Square Footage</h3></div>
-			<div class="column6"><h3>Bedrooms</h3></div>
-			<div class="column7"><h3>Bathrooms</h3></div>
-			<div class="column8"><h3>Details</h3></div>
-			<div class="column9"><h3>Comments</h3></div>';
+			echo '<div class="column1"><h3>ID</h4></div> 
+			<div class="column2"><h4>Rented</h4></div> 
+			<div class="column3"><h4>Address</h4></div>
+			<div class="column4"><h4>Price</h4></div>
+			<div class="column5"><h4>Square Footage</h4></div>
+			<div class="column6"><h4>Bedrooms</h4></div>
+			<div class="column7"><h4>Bathrooms</h4></div>
+			<div class="column8"><h4>Details</h4></div>
+			<div class="column9"><h4>Comments</h4></div>';
 
 			while ($row = $dbinfo->fetch(PDO::FETCH_ASSOC))
 				{
