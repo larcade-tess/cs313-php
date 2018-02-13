@@ -54,7 +54,11 @@ $db = connect();
 						echo '<div class="email">' . $row[email] . ' </div> </div>';
 					} 
 				}
-				?>
+				?> 
+
+<!-- 
+				$query = 'INSERT INTO scripture(book, chapter, verse, content) VALUES(:book, :chapter, :verse, :content)';
+				$statement = $db->prepare($query); -->
 			</div>
 		</main>
 		<footer>
