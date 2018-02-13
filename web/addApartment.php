@@ -45,13 +45,10 @@ $db = connect();
 				<input type='Text' name='price' required>
 				<br>
 				<h4>Details</h4>
-				<input type='textarea' name='details' required>
+				<textarea rows="4" cols="50" name="details" required></textarea>
 				<br>
-				<h4>Rented</h4>
-				<h4>Yes</h4>
-				<input  type='radio' name='rentedY'>
-				<h4>No</h4>
-				<input  type='radio' name='rentedN'>
+				<h4>Apartment is rented</h4>
+				<input  type='checkbox' name='rented'>
 				<br>
 				<h4>Comments</h4>
 				<textarea rows="4" cols="50" name='comments'></textarea>

@@ -45,8 +45,6 @@ $db = connect();
 		?>
 		<div>
 			<?php
-			require("connecttodb.php");
-			$db = connect();
 			try
 			{
 	// Add the Scripture
