@@ -36,15 +36,14 @@ $db = connect();
 		<div>
 			<h3>Add Apartment</h3>
 		</div>
-		<div>
+		<div class = "apartments">
 			<?php
 			$dbinfo = $db->query('SELECT apartment_id, rented, location, price, details, comments FROM apartment');
-			echo '<div class = "apartments">
-			<div class="column1"> <h3>ID</h3></div> <div class="column2"><h3>Rented</h3></div> <div class="column3"><h3>Address</h3></div><div class="column4"><h3>Price</h3></div><div class="column5"><h3>Details</h3></div>
+			echo '<div class="column1"> <h3>ID</h3></div> <div class="column2"><h3>Rented</h3></div> <div class="column3"><h3>Address</h3></div><div class="column4"><h3>Price</h3></div><div class="column5"><h3>Details</h3></div>
 			<div class="column6"><h3>Comments</h3></div>';
 			while ($row = $dbinfo->fetch(PDO::FETCH_ASSOC))
 				{
-					echo '<div class="column1">' . $row[apartment_id] . '</div><div class="column2">' . $row[location] . '</div><div class="column3">' . $row[rented] . '</div><div class="column4">' . $row[price] .'</div><div class="column5">' . $row[details] . '</div><div class="column6">' . $row[comments] . '</div></div>';
+					echo '<div class="column1">' . $row[apartment_id] . '</div><div class="column2">' . $row[location] . '</div><div class="column3">' . $row[rented] . '</div><div class="column4">' . $row[price] .'</div><div class="column5">' . $row[details] . '</div><div class="column6">' . $row[comments] . '</div>';
 				}
 				?> 
 			</div>
