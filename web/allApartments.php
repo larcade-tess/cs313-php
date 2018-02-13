@@ -42,13 +42,13 @@ $db = connect();
 			while ($row = $dbinfo->fetch(PDO::FETCH_ASSOC))
 				{
 
-					echo '<div class = "contactinfo"> 
-					<div class="fname">' . $row[apartment_id] . '</div>';
-					echo '<div class="lname">' . $row[rented] . '</div>';
-					echo '<div class="phone">' . $row[location] . '</div>';
-					echo '<div class="phone">' . $row[price] . '</div>';
-					echo '<div class="phone">' . $row[details] . '</div>';
-					echo '<div class="email">' . $row[comments] . ' </div> </div>';
+					echo '<div class = "apartments"> 
+					<div class="column"> <h3>ID</h3>' . $row[apartment_id] . '</div>';
+					echo '<div class="column"><h3>Rented</h3>' . $row[rented] . '</div>';
+					echo '<div class="column"><h3>Address</h3>' . $row[location] . '</div>';
+					echo '<div class="column"><h3>Price</h3>' . $row[price] . '</div>';
+					echo '<div class="column"><h3>Details</h3>' . $row[details] . '</div>';
+					echo '<div class="column"><h3>Comments</h3>' . $row[comments] . ' </div> </div>';
 					
 				}
 				?> 
