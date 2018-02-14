@@ -21,13 +21,13 @@ $db = connect();
 					<a href='showing.php'>Schedule A Showing</a>
 				</li>
 				<li>
-					<a href='apply.html'>Apply</a>
-				</li>
-				<li>
 					<a href='contacts.php'>Contacts</a>
 				</li>
 				<li>
-					<a href='#'>About Us</a>
+					<a href='allApartments.php'>All Apartments</a>
+				</li>
+				<li>
+					<a href='addApartment.php'>Add Apartments</a>
 				</li>
 			</ul>
 		</nav>
