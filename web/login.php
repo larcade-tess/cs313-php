@@ -37,11 +37,26 @@ $db = connect();
 		<div>
 			<h3>Login</h3>
 		</div>
+		<form id='login' action='validatelogin.php' method='post' accept-charset='UTF-8'>
+
+			<input type='hidden' name='submitted' id='submitted' value='1'>
+
+			<h3>UserName:</h3>
+
+			<input type='text' name='username' id='username'  maxlength="50">
+
+			<h3>Password:</h3>
+
+			<input type='password' name='password' id='password' maxlength="50">
+
+			<input type='submit' name='Submit' value='Submit'>
+
+		</form>
 
 
-		</main>
-		<footer>
-			&copy; Tess Larcade 2018
-		</footer>
-	</body>
-	</html>
+	</main>
+	<footer>
+		&copy; Tess Larcade 2018
+	</footer>
+</body>
+</html>
