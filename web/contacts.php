@@ -36,23 +36,31 @@ $db = connect();
 		<div>
 			<h3>Contacts</h3>
 		</div>
-		<div>
-			<p>Make this page only visable to the owners</p>
-		</div>
-
-		<div class = container>
-			<?php
-			$dbinfo = $db->query('SELECT first_name, last_name, phone, email FROM contact');
-			while ($row = $dbinfo->fetch(PDO::FETCH_ASSOC))
-				{
-					if ($row[rented] == false)
+		<?php
+		if (isset ($_SESSION['username']))
+		{
+			?>
+			<div class = container>
+				<?php
+				$dbinfo = $db->query('SELECT first_name, last_name, phone, email FROM contact');
+				while ($row = $dbinfo->fetch(PDO::FETCH_ASSOC))
 					{
-						echo '<div class = "contactinfo"> 
-						<div class="fname">' . $row[first_name] . '</div>';
-						echo '<div class="lname">' . $row[last_name] . '</div>';
-						echo '<div class="phone">' . $row[phone] . '</div>';
-						echo '<div class="email">' . $row[email] . ' </div> </div>';
-					} 
+						if ($row[rented] == false)
+						{
+							echo '<div class = "contactinfo"> 
+							<div class="fname">' . $row[first_name] . '</div>';
+							echo '<div class="lname">' . $row[last_name] . '</div>';
+							echo '<div class="phone">' . $row[phone] . '</div>';
+							echo '<div class="email">' . $row[email] . ' </div> </div>';
+						} 
+					}
+					?> 
+					<?php		
+				}
+				else
+				{
+					header("Location: login.php");
+					die(); 
 				}
 				?> 
 
