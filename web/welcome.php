@@ -35,7 +35,7 @@ $db = connect();
 	<main>
 		<div>
 			<?php
-			if ($_SESSION['username'] isset)
+			if (isset ($_SESSION['username']))
 			{
 				$user = $_SESSION['username'];
 				echo '<div> <h4> Welcome ' . $user . '</h4></div>';
