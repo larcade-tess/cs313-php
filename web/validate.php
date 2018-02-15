@@ -20,41 +20,43 @@ $db = connect();
 			<?php
 			try
 			{
-				$hashpass = "SELECT passwordhash FROM login WHERE username = '$username'";
-				$statement = $db->prepare($hashpass);
+				$hashpassquery = "SELECT passwordhash FROM login WHERE username = '$username'";
+				$statement = $db->prepare($hashpassquery);
 				$statement->execute();
 
-
+				while ($row = $dbinfo->fetch(PDO::FETCH_ASSOC))
+					{
+						$hasspass = $row[passwordhash];
 			// Query for username and password
-				if(password_verify($hashed_password, $hashpass)) {
+						if(password_verify($hashed_password, $hashpass)) {
 	// redirect
-					echo($hashpass . $hashed_password . "ok");
-					header("Location: welcome.php");
-					die(); 
-				} 
+							echo($hashpass . $hashed_password . "ok");
+							header("Location: welcome.php");
+							die(); 
+						} 
 
 // Else, Redirect them back to the login page.
-				else {
+						else {
 // redirect
-					echo($hashpass . $hashed_password . "error");
+							echo($hashpass . "       " . $hashed_password . "error");
 					//header("Location: login.php");
-					die(); 
+							die(); 
+						}
+					}
+				}
+				catch (Exception $ex)
+				{
+					echo($ex);
+					die();
 				}
 
-			}
-			catch (Exception $ex)
-			{
-				echo($ex);
-				die();
-			}
-
-			?>
-		</div>
-		<div>
-		</div>
-	</main>
-	<footer>
-		&copy; Tess Larcade 2018
-	</footer>
-</body>
-</html>
+				?>
+			</div>
+			<div>
+			</div>
+		</main>
+		<footer>
+			&copy; Tess Larcade 2018
+		</footer>
+	</body>
+	</html>
