@@ -10,6 +10,13 @@ $db = connect();
 	<link href="https://fonts.googleapis.com/css?family=Great+Vibes|Slabo+27px" rel="stylesheet">
 </head>
 <body>
+	<header>
+		<h1>JAP Property Management</h1>
+		<nav>
+			<ul>
+			</ul>
+		</nav>
+	</header>
 	<main>
 		<div>
 			<form action="validate.php" method = "post">

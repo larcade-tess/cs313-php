@@ -33,13 +33,46 @@ $db = connect();
 		</nav>
 	</header>
 	<main>
+		<?php
+// define variables and set to empty values
+		$usererr = $passerr= $pass1err = "";
+
+		if ($_SERVER["REQUEST_METHOD"] == "POST") {
+			if (empty($_POST["user"])) {
+				$usererr = "User is required";
+			} else {
+				$user = test_input($_POST["user"]);
+			}
+
+			if (empty($_POST["pass"])) {
+				$passerr = "Password is required";
+			} else {
+				$pass = test_input($_POST["pass"]);
+			}
+			if ( ($_POST["pass"]) != ($_POST["pass1"])) {
+				$pass1err = "Passwords must match";
+			} else {
+				$pass1 = test_input($_POST["pass1"]);
+			}
+		}
+
+		function test_input($data) {
+			$data = trim($data);
+			$data = stripslashes($data);
+			$data = htmlspecialchars($data);
+			return $data;
+		}
+		?>
+
 		<div>
 			<form action="adduser.php" method = "post">
 				<h3>Username</h3> 
-				<input type="username" id="username" name="username"><br>
+				<input type="username" id="username" name="user"><?php echo $usererr;?><br>
 				<h3>Password:</h3> 
-				<input type="password" id="password" name="password"><br>
-				<button type = "submit">Login</button>
+				<input type="password" id="password" name="pass"><?php echo $passerr;?><br>
+				<h3>Re-Enter Password:</h3> 
+				<input type="password" id="password" name="pass1"><?php echo $pass1err;?><br>
+				<button type = "submit">Sign Up</button>
 			</form>
 		</div>
 
