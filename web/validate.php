@@ -15,26 +15,24 @@ $db = connect();
 		$username = $_POST['username'];
 		$password = $_POST['password'];
 		$hashed_password = password_hash($password, PASSWORD_DEFAULT);
-		$id = $_SESSION['item'];
 		?>
 		<div>
 			<?php
 			try
 			{
-				$query = "SELECT username, passwordhash FROM login WHERE username = '$username'";
+				$query = "SELECT username, passwordhash FROM login WHERE username == '$username'";
 				$statement = $db->prepare($query);
 				$statement->execute();
 			}
 			catch (Exception $ex)
 			{
-				echo($id);
 				echo($ex);
 				die();
 			}
 			
 
 			// Query for username and password
-			if(password_verify($password, $hashed_password) && $username = $dbusername) {
+			if(password_verify($password, $hashed_password)) {
 	// redirect
 				header("Location: welcome.php");
 				die(); 
