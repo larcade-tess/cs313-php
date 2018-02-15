@@ -39,13 +39,14 @@ $db = connect();
 		<div>
 			<?php
 			$id = $_SESSION['item'];
-			$dbinfo = $db->query('SELECT username FROM login WHERE user_id = "$id"';
+			$dbinfo = $db->query('SELECT username FROM login WHERE user_id = "$id"');
 
 			while ($row = $dbinfo->fetch(PDO::FETCH_ASSOC))
 				{
 					echo '<div> <h4> Welcome ' . $row[username] . '</h4></div>';
 				}
 				?> 
+
 			</div>
 		</main>
 		<footer>
