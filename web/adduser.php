@@ -37,7 +37,6 @@ $db = connect();
 			}
 // redirect
 			header("Location: login.php");
-			addItem($userID);
 			die(); 
 			?>
 		</div>

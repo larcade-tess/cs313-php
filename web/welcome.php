@@ -38,8 +38,8 @@ $db = connect();
 		</div>
 		<div>
 			<?php
-			$id = $_SESSION['item'];
-			$dbinfo = $db->query("SELECT username FROM login WHERE user_id = '$id'");
+			$user = $_SESSION['username'];
+			$dbinfo = $db->query("SELECT username FROM login WHERE user_id = '$user'");
 
 			while ($row = $dbinfo->fetch(PDO::FETCH_ASSOC))
 				{
