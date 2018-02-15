@@ -41,13 +41,21 @@ $db = connect();
 		if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			if (empty($_POST["user"])) {
 				$usererr = "User is required";
-			} else {
+			} 
+			else {
 				$user = test_input($_POST["user"]);
 			}
 
 			if (empty($_POST["pass"])) {
 				$passerr = "Password is required";
-			} else {
+			} 
+			else if (strlen($_POST["pass"]) < 7 ) {
+				$passerr = "Password must be 7 characters";
+			}
+			else if (preg_match('`[0-9]`',($_POST["pass"])) ) {
+				$passerr = "Password must contain a digit";
+			}
+			else {
 				$pass = test_input($_POST["pass"]);
 			}
 			if (empty($_POST["pass1"])){
