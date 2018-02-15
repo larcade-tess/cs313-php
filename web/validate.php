@@ -21,8 +21,8 @@ $db = connect();
 			try
 			{
 				$hashpass = "SELECT passwordhash FROM login WHERE username = '$username'";
-				$statement = $db->prepare($hashpass);
-				$statement->execute();
+//				$statement = $db->prepare($hashpass);
+//				$statement->execute();
 
 
 			// Query for username and password
