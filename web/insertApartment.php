@@ -10,32 +10,7 @@ $db = connect();
 	<link href="https://fonts.googleapis.com/css?family=Great+Vibes|Slabo+27px" rel="stylesheet">
 </head>
 <body>
-	<header>
-		<h1>JAP Property Management</h1>
-		<nav>
-			<ul>
-				<li>
-					<a href='apartments.php'>Apartments</a>
-				</li>
-				<li>
-					<a href='showing.php'>Schedule A Showing</a>
-				</li>
-				<li>
-					<a href='contacts.php'>Contacts</a>
-				</li>
-				<li>
-					<a href='allApartments.php'>All Apartments</a>
-				</li>
-				<li>
-					<a href='addApartment.php'>Add Apartments</a>
-				</li>
-			</ul>
-		</nav>
-	</header>
 	<main>
-		<div>
-			<h3>Insert Apartments</h3>
-		</div>
 		<?php
 		$address = $_POST['location'];
 		$price = $_POST['price'];
@@ -50,12 +25,9 @@ $db = connect();
 			<?php
 			try
 			{
-	// Add the Scripture
-	// We do this by preparing the query with placeholder values
 				$query = 'INSERT INTO apartment (rented, location, price, details, comments, sqft, bed, bath) VALUES(:rented, :location, :price, :details, :comments, :sqft, :bed, :bath)';
 				$statement = $db->prepare($query);
-	// Now we bind the values to the placeholders. This does some nice things
-	// including sanitizing the input with regard to sql commands.
+	// bind the values to the placeholders
 				$statement->bindValue(':rented', $rented);
 				$statement->bindValue(':location', $address);
 				$statement->bindValue(':price', $price);
@@ -66,29 +38,23 @@ $db = connect();
 				$statement->bindValue(':bath', $bath);
 
 				$statement->execute();
-	// get the new id
+	//new id
 				$apartID = $db->lastInsertId("apartment_id");
 			}
 			catch (Exception $ex)
 			{
-	// Please be aware that you don't want to output the Exception message in
-	// a production environment
-				echo "Error with DB. Details: $ex";
 				die();
 			}
-// finally, redirect them to a new page to actually show the topics
+// redirect
 			header("Location: allApartments.php");
-die(); // we always include a die after redirects. In this case, there would be no
-       // harm if the user got the rest of the page, because there is nothing else
-       // but in general, there could be things after here that we don't want them
-       // to see.
-?>
-</div>
-<div>
-</div>
-</main>
-<footer>
-	&copy; Tess Larcade 2018
-</footer>
+			die(); 
+			?>
+		</div>
+		<div>
+		</div>
+	</main>
+	<footer>
+		&copy; Tess Larcade 2018
+	</footer>
 </body>
 </html>
