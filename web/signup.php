@@ -52,13 +52,15 @@ $db = connect();
 			}
 			if (empty($_POST["pass1"])){
 				$pass1err = "Password is required";
-			}
-			else if (($_POST["pass"]) != ($_POST["pass1"])) {
-				$pass1err = "* Passwords must match";
-				$passerr = "*";
 			} 
 			else {
-				$pass1 = test_input($_POST["pass1"]);
+				if (($_POST["pass"]) != ($_POST["pass1"])) {
+					$pass1err = "* Passwords must match";
+					$passerr = "*";
+				}
+				else {
+					$pass1 = test_input($_POST["pass1"]);
+				}
 			}
 		}
 
