@@ -35,8 +35,16 @@ $db = connect();
 	<main>
 		<div>
 			<?php
-			$user = $_SESSION['username'];
-			echo '<div> <h4> Welcome ' . $user . '</h4></div>';
+			if ($_SESSION['username'] isset)
+			{
+				$user = $_SESSION['username'];
+				echo '<div> <h4> Welcome ' . $user . '</h4></div>';
+			}
+			else
+			{
+				header("Location: login.php");
+				die(); 
+			}
 			?> 
 
 		</div>
