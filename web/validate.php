@@ -21,12 +21,13 @@ $db = connect();
 			<?php
 			try
 			{
-				$query = 'SELECT username, passwordhash FROM login WHERE user_id = "$id"';
+				$query = "SELECT username, passwordhash FROM login WHERE user_id = '$id'";
 				$statement = $db->prepare($query);
 				$statement->execute();
 			}
 			catch (Exception $ex)
 			{
+				echo($id);
 				echo($ex);
 				die();
 			}
