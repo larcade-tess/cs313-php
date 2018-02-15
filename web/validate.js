@@ -8,7 +8,7 @@ var pass1=document.getElementById("password1").value;
 var pass=document.getElementById("password").value;
 
 if(pass1!=pass)
-	document.getElementById("password2").setCustomValidity("Passwords Don't Match");
+	document.getElementById("password").setCustomValidity("Passwords Don't Match");
 else
-	document.getElementById("password2").setCustomValidity('');
+	document.getElementById("password1").setCustomValidity('');
 }
