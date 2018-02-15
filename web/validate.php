@@ -25,7 +25,7 @@ $db = connect();
 				$statement->execute();
 
 			// Query for username and password
-				if(password_verify($password, $hashpass)) {
+				if(password_verify($hashed_password, $hashpass)) {
 	// redirect
 					header("Location: welcome.php");
 					die(); 
