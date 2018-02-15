@@ -12,8 +12,8 @@ $db = connect();
 <body>
 	<main>
 		<?php
-		$username = $_POST['username'];
-		$password = $_POST['password'];
+		$username = $_POST['user'];
+		$password = $_POST['pass'];
 		$hashed_password = password_hash($password, PASSWORD_DEFAULT);
 		?>
 		<div>

@@ -14,9 +14,9 @@ $db = connect();
 		<div>
 			<form action="validate.php" method = "post">
 				<h3>Username</h3> 
-				<input type="username" id="username" name="username"><br>
+				<input type="username" id="username" name="user"><br>
 				<h3>Password:</h3> 
-				<input type="password" id="password" name="password"><br>
+				<input type="password" id="password" name="pass"><br>
 				<button type = "submit">Login</button>
 			</form>
 		</div>
