@@ -29,7 +29,6 @@ $db = connect();
 				$statement->execute();
 	//new id
 				$userID = $db->lastInsertId("user_id");
-				addItem($userID);
 			}
 			catch (Exception $ex)
 			{
@@ -38,6 +37,7 @@ $db = connect();
 			}
 // redirect
 			header("Location: login.php");
+			addItem($userID);
 			die(); 
 			?>
 		</div>
