@@ -21,9 +21,9 @@ $db = connect();
 			try
 			{
 				$hashpass = "SELECT passwordhash FROM login WHERE username = '$username'";
-				$statement = $db->prepare($query);
+				$statement = $db->prepare($hashpass);
 				$statement->execute();
-				
+
 			// Query for username and password
 				if(password_verify($password, $hashpass)) {
 	// redirect
