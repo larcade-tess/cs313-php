@@ -16,15 +16,9 @@ $db = connect();
 				<h3>Username</h3> 
 				<input type="username" id="username" name="username"><br>
 				<h3>Password:</h3> 
-				<input type="text" id="password" name="password"><br>
+				<input type="password" id="password" name="password"><br>
 				<button type = "submit">Login</button>
 			</form>
-		</div>
-		<div>
-		</div>
-		<div>
-
-
 		</div>
 	</main>
 	<footer>

@@ -36,10 +36,10 @@ $db = connect();
 		<div>
 			<h3>All Apartments</h3>
 		</div>
-		<div class = "apartments">
+		<div>
 			<?php
-
-			$dbinfo = $db->query('SELECT username FROM login WHERE ');
+			$id = $_SESSION['item'];
+			$dbinfo = $db->query('SELECT username FROM login WHERE user_id =' . $id);
 
 			while ($row = $dbinfo->fetch(PDO::FETCH_ASSOC))
 				{

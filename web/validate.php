@@ -15,12 +15,13 @@ $db = connect();
 		$username = $_POST['username'];
 		$password = $_POST['password'];
 		$hashed_password = password_hash($password, PASSWORD_DEFAULT);
+		$id = $_SESSION['item'];
 		?>
 		<div>
 			<?php
 			try
 			{
-				$query = 'SELECT username, passwordhash FROM login WHERE user_id = ';
+				$query = 'SELECT username, passwordhash FROM login WHERE user_id =' . $id;
 				$statement = $db->prepare($query);
 				$statement->execute();
 			}
