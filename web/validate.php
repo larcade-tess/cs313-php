@@ -24,7 +24,7 @@ $db = connect();
 				$statement = $db->prepare($hashpassquery);
 				$statement->execute();
 
-				while ($row = $dbinfo->fetch(PDO::FETCH_ASSOC))
+				while ($row = $hashpassquery->fetch(PDO::FETCH_ASSOC))
 					{
 						$hasspass = $row[passwordhash];
 			// Query for username and password
