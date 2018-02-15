@@ -52,7 +52,7 @@ $db = connect();
 			else if (strlen($_POST["pass"]) < 7 ) {
 				$passerr = "Password must be 7 characters";
 			}
-			else if (preg_match('`[0-9]`',($_POST["pass"])) ) {
+			else if (!preg_match('/[^0-9]/',($_POST["pass"])) ) {
 				$passerr = "Password must contain a digit";
 			}
 			else {
