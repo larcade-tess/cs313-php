@@ -21,7 +21,7 @@ $db = connect();
 			try
 			{
 
-				$hashpassquery = "SELECT passwordhash FROM login WHERE username = ':username'";
+				$hashpassquery = "SELECT passwordhash FROM login WHERE username = :username";
 				$statement = $db->prepare($hashpassquery);
 				$statement->bindValue(':username', $username);
 				$result = $statement->execute();
@@ -29,7 +29,7 @@ $db = connect();
 				if ($result)
 				{
 					$row = $statement->fetch();
-					$hashpass = $row['password'];
+					$hashpass = $row['passwordhash'];
 		// now check to see if the hashed password matches
 					if (password_verify($password, $hashpass))
 					{
