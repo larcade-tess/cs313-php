@@ -28,16 +28,17 @@ $db = connect();
 			// Query for username and password
 				if(password_verify($hashed_password, $hashpass)) {
 	// redirect
-					header("Location: welcome.php");
-					die(); 
+					echo($hashpass, $hashed_password, "ok")
+					//header("Location: welcome.php");
+					//die(); 
 				} 
 
 // Else, Redirect them back to the login page.
 				else {
 // redirect
-					echo($hashpass, $hashed_password)
+					echo($hashpass, $hashed_password, "error")
 					//header("Location: login.php");
-					die(); 
+					//die(); 
 				}
 
 			}
