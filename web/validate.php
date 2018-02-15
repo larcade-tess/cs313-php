@@ -20,9 +20,10 @@ $db = connect();
 			<?php
 			try
 			{
-				$query = "SELECT username, passwordhash FROM login WHERE username == '$username'";
+				$hashpass = "SELECT passwordhash FROM login WHERE username = '$username'";
 				$statement = $db->prepare($query);
 				$statement->execute();
+
 			}
 			catch (Exception $ex)
 			{
@@ -32,7 +33,7 @@ $db = connect();
 			
 
 			// Query for username and password
-			if(password_verify($password, $hashed_password)) {
+			if(password_verify($password, $hashpass)) {
 	// redirect
 				header("Location: welcome.php");
 				die(); 
