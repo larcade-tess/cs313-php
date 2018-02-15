@@ -33,6 +33,7 @@ $db = connect();
 			}
 			catch (Exception $ex)
 			{
+				echo($ex);
 				die();
 			}
 // redirect
