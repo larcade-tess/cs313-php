@@ -37,6 +37,17 @@ $db = connect();
 			<h3>Add Apartment</h3>
 		</div>
 		<div>
+			<?php 
+			if (isset ($_SESSION['username']))
+			{
+				
+			}
+			else
+			{
+				header("Location: login.php");
+				die(); 
+			}
+			?> 
 			<form action='insertApartment.php' method='post'>
 				<h4>Address</h4>
 				<input type='Address' name='location' required>
