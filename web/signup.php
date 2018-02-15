@@ -65,7 +65,7 @@ $db = connect();
 		?>
 
 		<div>
-			<form action="adduser.php" method = "post">
+			<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method = "post">
 				<h3>Username</h3> 
 				<input type="username" id="username" name="user"><?php echo $usererr;?><br>
 				<h3>Password:</h3> 
