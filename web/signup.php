@@ -72,7 +72,7 @@ $db = connect();
 				<h3>Password:</h3> 
 				<input type="password" id="password" name="pass"><div class = 'error'><?php echo $passerr;?></div><br>
 				<h3>Re-Enter Password:</h3> 
-				<input type="password" id="password" name="pass1"><div class = 'error'><?php echo $pass1err;?></div><br>
+				<input type="password" id="password1" name="pass1"><div class = 'error'><?php echo $pass1err;?></div><br>
 				<button type = "submit">Sign Up</button>
 			</form>
 		</div>
