@@ -23,27 +23,26 @@ $db = connect();
 				$hashpass = "SELECT passwordhash FROM login WHERE username = '$username'";
 				$statement = $db->prepare($query);
 				$statement->execute();
+				
+			// Query for username and password
+				if(password_verify($password, $hashpass)) {
+	// redirect
+					header("Location: welcome.php");
+					die(); 
+				} 
+
+// Else, Redirect them back to the login page.
+				else {
+// redirect
+					header("Location: login.php");
+					die(); 
+				}
 
 			}
 			catch (Exception $ex)
 			{
 				echo($ex);
 				die();
-			}
-			
-
-			// Query for username and password
-			if(password_verify($password, $hashpass)) {
-	// redirect
-				header("Location: welcome.php");
-				die(); 
-			} 
-
-// Else, Redirect them back to the login page.
-			else {
-// redirect
-				header("Location: login.php");
-				die(); 
 			}
 
 			?>
