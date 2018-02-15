@@ -20,40 +20,52 @@ $db = connect();
 			<?php
 			try
 			{
-				$hashpassquery = "SELECT passwordhash FROM login WHERE username = '$username'";
-				while ($row = $hashpassquery->fetch(PDO::FETCH_ASSOC))
-					{
-						$hasspass = $row[passwordhash];
-			// Query for username and password
-						if(password_verify($password, $hashpass)) {
-	// redirect
-							echo($hashpass . $hashed_password . "ok");
-							header("Location: welcome.php");
-							die(); 
-						} 
 
-// Else, Redirect them back to the login page.
-						else {
+				$hashpassquery = "SELECT passwordhash FROM login WHERE username = '$username'";
+				$statement = $db->prepare($hashpassquery);
+				$statement->bindValue(':username', $username);
+				$result = $statement->execute();
+
+				if ($result)
+				{
+					$row = $statement->fetch();
+					$hashpass = $row['password'];
+		// now check to see if the hashed password matches
+					if (password_verify($password, $hashpass))
+					{
+			// password was correct, put the user on the session, and redirect to home
+						$_SESSION['username'] = $username;
+						header("Location: home.php");
+			die(); // we always include a die after redirects.
+		}
+		else {
 // redirect
-							echo($hashpass . $hashed_password . "error");
+			echo($hashpass . $hashed_password . "error");
 					//header("Location: login.php");
 							//die(); 
-						}
-					}
-				}
-				catch (Exception $ex)
-				{
-					echo($ex);
-					die();
-				}
+		}
+	}
+	else {
+// redirect
+		echo($hashpass . $hashed_password . "error");
+					//header("Location: login.php");
+							//die(); 
+	}
+}
 
-				?>
-			</div>
-			<div>
-			</div>
-		</main>
-		<footer>
-			&copy; Tess Larcade 2018
-		</footer>
-	</body>
-	</html>
+catch (Exception $ex)
+{
+	echo($ex);
+	die();
+}
+
+?>
+</div>
+<div>
+</div>
+</main>
+<footer>
+	&copy; Tess Larcade 2018
+</footer>
+</body>
+</html>
