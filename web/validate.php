@@ -21,14 +21,11 @@ $db = connect();
 			try
 			{
 				$hashpassquery = "SELECT passwordhash FROM login WHERE username = '$username'";
-				$statement = $db->prepare($hashpassquery);
-				$statement->execute();
-
 				while ($row = $hashpassquery->fetch(PDO::FETCH_ASSOC))
 					{
 						$hasspass = $row[passwordhash];
 			// Query for username and password
-						if(password_verify($hashed_password, $hashpass)) {
+						if(password_verify($password, $hashpass)) {
 	// redirect
 							echo($hashpass . $hashed_password . "ok");
 							header("Location: welcome.php");
