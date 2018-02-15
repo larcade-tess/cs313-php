@@ -50,7 +50,8 @@ $db = connect();
 				$pass = test_input($_POST["pass"]);
 			}
 			if ( ($_POST["pass"]) != ($_POST["pass1"])) {
-				$pass1err = "Passwords must match";
+				$pass1err = "* Passwords must match";
+				$passerr = "*";
 			} else {
 				$pass1 = test_input($_POST["pass1"]);
 			}
@@ -67,11 +68,11 @@ $db = connect();
 		<div>
 			<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method = "post">
 				<h3>Username</h3> 
-				<input type="username" id="username" name="user"><?php echo $usererr;?><br>
+				<input type="username" id="username" name="user"><div class = 'error'><?php echo $usererr;?></div><br>
 				<h3>Password:</h3> 
-				<input type="password" id="password" name="pass"><?php echo $passerr;?><br>
+				<input type="password" id="password" name="pass"><div class = 'error'><?php echo $passerr;?></div><br>
 				<h3>Re-Enter Password:</h3> 
-				<input type="password" id="password" name="pass1"><?php echo $pass1err;?><br>
+				<input type="password" id="password" name="pass1"><div class = 'error'><?php echo $pass1err;?></div><br>
 				<button type = "submit">Sign Up</button>
 			</form>
 		</div>

@@ -107,3 +107,6 @@ form {
 	grid-column-start:9;
 	grid-column-end:10;
 }
+.error {
+	color:red;
+}
