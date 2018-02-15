@@ -36,6 +36,7 @@ $db = connect();
 		<?php
 // define variables and set to empty values
 		$usererr = $passerr = $pass1err = "";
+		$user = $pass = $pass1 = "";
 
 		if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			if (empty($_POST["user"])) {
@@ -55,7 +56,8 @@ $db = connect();
 			else if (($_POST["pass"]) != ($_POST["pass1"])) {
 				$pass1err = "* Passwords must match";
 				$passerr = "*";
-			} else {
+			} 
+			else {
 				$pass1 = test_input($_POST["pass1"]);
 			}
 		}
