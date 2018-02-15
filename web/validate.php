@@ -37,7 +37,7 @@ $db = connect();
 				else {
 // redirect
 					echo($hashpass . $hashed_password . "error");
-					header("Location: login.php");
+					//header("Location: login.php");
 					die(); 
 				}
 
