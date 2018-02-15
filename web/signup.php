@@ -49,7 +49,10 @@ $db = connect();
 			} else {
 				$pass = test_input($_POST["pass"]);
 			}
-			if ( isset($_POST["pass"]) != isset($_POST["pass1"])) {
+			if (empty($_POST["pass1"])){
+				$pass1err = "Password is required";
+			}
+			else if (($_POST["pass"]) != ($_POST["pass1"])) {
 				$pass1err = "* Passwords must match";
 				$passerr = "*";
 			} else {
