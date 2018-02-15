@@ -24,6 +24,7 @@ $db = connect();
 				$statement = $db->prepare($hashpass);
 				$statement->execute();
 
+
 			// Query for username and password
 				if(password_verify($hashed_password, $hashpass)) {
 	// redirect
@@ -34,7 +35,8 @@ $db = connect();
 // Else, Redirect them back to the login page.
 				else {
 // redirect
-					header("Location: login.php");
+					echo($hashpass, $hashed_password)
+					//header("Location: login.php");
 					die(); 
 				}
 
