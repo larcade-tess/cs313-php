@@ -21,7 +21,7 @@ $db = connect();
 			try
 			{
 
-				$hashpassquery = "SELECT passwordhash FROM login WHERE username = '$username'";
+				$hashpassquery = "SELECT passwordhash FROM login WHERE username = ':username'";
 				$statement = $db->prepare($hashpassquery);
 				$statement->bindValue(':username', $username);
 				$result = $statement->execute();
