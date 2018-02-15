@@ -12,6 +12,7 @@ $db = connect();
 <body>
 	<header>
 		<h1>JAP Property Management</h1>
+		<a class = 'login' href = "login.php">Login</a>
 		<nav>
 			<ul>
 				<li>

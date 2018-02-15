@@ -110,3 +110,6 @@ form {
 .error {
 	color:red;
 }
+.login {
+	position:absolute;
+}

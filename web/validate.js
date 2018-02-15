@@ -7,7 +7,7 @@ function validatePassword(){
 	var pass1=document.getElementById("password1").value;
 	var pass=document.getElementById("password").value;
 
-	if(pass1!=pass) {
+	if(pass!=pass1) {
 		document.getElementById("password").setCustomValidity("Passwords Don't Match");
 	}
 	else{
