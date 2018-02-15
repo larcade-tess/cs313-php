@@ -34,23 +34,15 @@ $db = connect();
 	</header>
 	<main>
 		<div>
-			<h3>All Apartments</h3>
-		</div>
-		<div>
 			<?php
 			$user = $_SESSION['username'];
-			$dbinfo = $db->query("SELECT username FROM login WHERE user_id = '$user'");
+			echo '<div> <h4> Welcome ' . $user . '</h4></div>';
+			?> 
 
-			while ($row = $dbinfo->fetch(PDO::FETCH_ASSOC))
-				{
-					echo '<div> <h4> Welcome ' . $row[username] . '</h4></div>';
-				}
-				?> 
-
-			</div>
-		</main>
-		<footer>
-			&copy; Tess Larcade 2018
-		</footer>
-	</body>
-	</html>
+		</div>
+	</main>
+	<footer>
+		&copy; Tess Larcade 2018
+	</footer>
+</body>
+</html>
