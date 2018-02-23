@@ -11,7 +11,7 @@ $db = connect();
 </head>
 <body>
 	<header>
-		<h1>JAP Property Management</h1>
+		<h1 id='logo'>JAP Property Management</h1>
 		<nav>
 			<ul>
 				<li>
@@ -25,9 +25,6 @@ $db = connect();
 				</li>
 				<li>
 					<a href='contacts.php'>Contacts</a>
-				</li>
-				<li>
-					<a href='#'>About Us</a>
 				</li>
 			</ul>
 		</nav>

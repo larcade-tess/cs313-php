@@ -13,23 +13,16 @@ $db = connect();
 	<header>
 		<h1>JAP Property Management</h1>
 		<nav>
-			<ul>
-				<li>
-					<a href='apartments.php'>Apartments</a>
-				</li>
-				<li>
-					<a href='showing.php'>Schedule A Showing</a>
-				</li>
-				<li>
-					<a href='contacts.php'>Contacts</a>
-				</li>
-				<li>
-					<a href='allApartments.php'>All Apartments</a>
-				</li>
-				<li>
-					<a href='addApartment.php'>Add Apartments</a>
-				</li>
-			</ul>
+			<?php 
+			if (isset ($_SESSION['username']))
+			{
+				include 'modules/navlogin.php';
+			}
+			else
+			{
+				include 'modules/nav.php';
+			}
+			?> 
 		</nav>
 	</header>
 	<main>
@@ -40,7 +33,7 @@ $db = connect();
 			<?php 
 			if (isset ($_SESSION['username']))
 			{
-				
+
 			}
 			else
 			{
