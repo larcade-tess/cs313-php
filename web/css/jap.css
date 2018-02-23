@@ -28,12 +28,12 @@ li {
 	list-style:none;
 	display:inline;
 }
-form {
-	margin: 20px;
-}
 h2, h3 {
 	margin:0px;
 	padding-top:15px;
+}
+h4 {
+	display:inline;
 }
 #logo {
     margin-left: 80px;
