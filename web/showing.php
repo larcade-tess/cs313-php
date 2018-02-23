@@ -32,18 +32,22 @@ $db = connect();
 			</div>
 			<div>
 				<form action='thanks.php' method='post'>
-					<h4>First Name</h4>
-					<input type='Name' name='fName' required>
-					<br>
-					<h4>Last Name</h4>
-					<input type='Name' name='lName' required>
-					<br>
-					<h4>Phone Number</h4>
-					<input phone='Phone' name='phone' required>
-					<br>
-					<h4>Email Address</h4>
-					<input email='Email' name='email' required>
-					<br>
+					<div class='name'>
+						<h4>First Name</h4>
+						<input type='Name' name='fName' required>
+						<br>
+						<h4>Last Name</h4>
+						<input type='Name' name='lName' required>
+						<br>
+					</div>
+					<div class='contact'>
+						<h4>Phone Number</h4>
+						<input phone='Phone' name='phone' required>
+						<br>
+						<h4>Email Address</h4>
+						<input email='Email' name='email' required>
+						<br>
+					</div>
 					<h4>Comments</h4>
 					<textarea rows="4" cols="50" name='comments'></textarea>
 					<br>

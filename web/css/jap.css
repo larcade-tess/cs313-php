@@ -8,7 +8,7 @@ main {
 }
 footer {
 	padding:10px 10px;
-	background-color:#E9BF00;
+	color:#faebd7;
 }
 nav {
 	background-color: #E9BF00;
@@ -31,9 +31,6 @@ li {
 h2, h3 {
 	margin:0px;
 	padding-top:15px;
-}
-h4 {
-	display:inline;
 }
 #logo {
     margin-left: 80px;
