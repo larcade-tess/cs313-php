@@ -55,7 +55,7 @@ $db = connect();
 					<h4>Comments</h4>
 					<textarea rows="4" cols="50" name='comments'></textarea>
 					<br>
-					<input type='submit'>
+					<input class = 'button' type='submit'>
 				</form>
 			</div>
 		</div>

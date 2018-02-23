@@ -21,7 +21,7 @@ a {
 	font-family: serif;
 }
 ul {
-	padding:5px;
+	padding: 10px 68px;
 	margin:0px;
 }
 li {
@@ -38,6 +38,9 @@ h3 {
 }
 h4 {
 	margin:0px;
+}
+form {
+	padding-bottom:30px;
 }
 #logo {
 	margin-left: 80px;
@@ -128,7 +131,7 @@ h4 {
 	color:#E9BF00;
 }
 #showing {
-	padding-left:50px;
+	padding-left:80px;
 }
 .section {
 	display: flex;
@@ -137,4 +140,7 @@ h4 {
 }
 .name {
 	padding-right:30px;
+}
+.button {
+	background-color:#E9BF00;
 }
