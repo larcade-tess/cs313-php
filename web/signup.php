@@ -24,7 +24,6 @@ $db = connect();
 			}
 			?> 
 		</nav>
-		</nav>
 	</header>
 	<main>
 		<?php
