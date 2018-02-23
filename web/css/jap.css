@@ -22,20 +22,22 @@ a {
 }
 ul {
 	padding:5px;
+	margin:0px;
 }
 li {
 	list-style:none;
 	display:inline;
 }
-h1 {
-	padding-left:15px;
-}
 form {
 	margin: 20px;
+}
+h2 {
+	margin:0px;
 }
 #logo {
     margin-left: 180px;
     font-size: 3em;
+    color:#faebd7;
 }
 #apartment1 {
 	background-image:url("15th_street.jpg");
