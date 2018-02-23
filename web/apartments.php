@@ -27,26 +27,28 @@ $db = connect();
 		</nav>
 	</header>
 	<main>
-		<div>
-			<h3>Apartments</h3>
-		</div>
+		<div class = 'indent'>
+			<div>
+				<h3>Apartments</h3>
+			</div>
 
-		<div class = container>
-			<?php
-			$dbinfo = $db->query('SELECT apartment_id, rented, location, price FROM apartment');
-			while ($row = $dbinfo->fetch(PDO::FETCH_ASSOC))
-				{
-					if ($row[rented] == false)
+			<div class = container>
+				<?php
+				$dbinfo = $db->query('SELECT apartment_id, rented, location, price FROM apartment');
+				while ($row = $dbinfo->fetch(PDO::FETCH_ASSOC))
 					{
-						echo '<div class = "aptinfo">
-						<a href="apartment'. $row[apartment_id] . '.php">
-						<div class="apartmentimg" id="apartment' . $row[apartment_id] . '">' . 
-						'</div>';
-						echo '<div class="apartment">' . $row[location] . '</div></a>';
-						echo '<div class="location">' . $row[price] . ' Monthly </div> </div>';
-					} 
-				}
-				?>
+						if ($row[rented] == false)
+						{
+							echo '<div class = "aptinfo">
+							<a href="apartment'. $row[apartment_id] . '.php">
+							<div class="apartmentimg" id="apartment' . $row[apartment_id] . '">' . 
+							'</div>';
+							echo '<div class="apartment">' . $row[location] . '</div></a>';
+							echo '<div class="location">' . $row[price] . ' Monthly </div> </div>';
+						} 
+					}
+					?>
+				</div>
 			</div>
 		</main>
 		<footer>
