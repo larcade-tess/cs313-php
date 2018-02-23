@@ -31,11 +31,12 @@ li {
 form {
 	margin: 20px;
 }
-h2 {
+h2, h3 {
 	margin:0px;
+	padding-top:15px;
 }
 #logo {
-    margin-left: 180px;
+    margin-left: 80px;
     font-size: 3em;
     color:#faebd7;
 }
@@ -120,4 +121,5 @@ h2 {
 	position:absolute;
 	top: 20px;
 	right: 30px;
+	color:#E9BF00;
 }

@@ -23,6 +23,7 @@ $db = connect();
 				include 'modules/nav.php';
 			}
 			?> 
+		</nav>
 	</header>
 	<main>
 		<div>
