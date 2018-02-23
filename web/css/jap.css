@@ -28,14 +28,14 @@ li {
 	list-style:none;
 	display:inline;
 }
-h2, h3 {
+h2, h3, h4 {
 	margin:0px;
 	padding-top:15px;
 }
 #logo {
-    margin-left: 80px;
-    font-size: 3em;
-    color:#faebd7;
+	margin-left: 80px;
+	font-size: 3em;
+	color:#faebd7;
 }
 #apartment1 {
 	background-image:url("15th_street.jpg");
@@ -122,4 +122,14 @@ h2, h3 {
 }
 #showing {
 	padding-left:50px;
+}
+.name {
+	display: flex;
+	flex-flow: wrap;
+	height: 21px;
+}
+.contact {
+	display: flex;
+	flex-flow: wrap;
+	height: 21px;
 }
