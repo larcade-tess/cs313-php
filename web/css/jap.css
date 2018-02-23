@@ -4,16 +4,18 @@ body {
 	margin:0px;
 }
 main {
-	padding:0px 20px;
-	background-color:#eedfcc;
-	width:70%;
+	padding: 0px 20px;
+    background-color: #eedfcc;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
 }
 footer {
 	padding:10px 10px;
-	background-color:#b22222;
+	background-color:#E9BF00;
 }
 nav {
-	background-color:#b22222;
+	background-color:#E9BF00;
 }
 a {
 	text-decoration:none;
@@ -58,7 +60,7 @@ form {
 .container {
 	display: grid;
 	grid-gap: 20px;
-	padding:10px 200px;
+	padding:10px 50px;
 }
 .grid-img1 {
 	grid-column-start: 1;
