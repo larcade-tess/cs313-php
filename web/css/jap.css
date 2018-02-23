@@ -28,9 +28,13 @@ li {
 	list-style:none;
 	display:inline;
 }
-h2, h3 {
+h2 {
 	margin:0px;
-	padding-top:15px;
+}
+h3 {
+	font-size:2em;
+	margin:0px;
+	padding: 30px 0px;
 }
 h4 {
 	margin:0px;
@@ -129,6 +133,7 @@ h4 {
 .section {
 	display: flex;
 	flex-flow: wrap;
+	padding-bottom:20px;
 }
 .name {
 	padding-right:30px;
