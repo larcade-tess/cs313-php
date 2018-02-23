@@ -26,9 +26,9 @@ $db = connect();
 		</nav>
 	</header>
 	<main>
-		<div id = 'showing'>
+		<div class = 'indent'>
 			<div>
-				<h3>Schedule a Showing</h3>
+				<h3>Schedule A Showing</h3>
 			</div>
 			<div>
 				<form action='thanks.php' method='post'>

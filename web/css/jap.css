@@ -67,10 +67,15 @@ form {
 	height:auto;
 	width:400px;
 }
+.aptinfo {
+	display:flex;
+}
+.aptinfo a {
+	padding:0px;
+}
 .container {
 	display: grid;
 	grid-gap: 20px;
-	padding:10px 50px;
 }
 .grid-img1 {
 	grid-column-start: 1;
@@ -130,7 +135,7 @@ form {
 	right: 30px;
 	color:#E9BF00;
 }
-#showing {
+.indent {
 	padding-left:80px;
 }
 .section {
@@ -142,5 +147,8 @@ form {
 	padding-right:30px;
 }
 .button {
-	background-color:#E9BF00;
+	background-color: #E9BF00;
+	border: none;
+	padding: 5px 165px;
+	margin-top: 20px;
 }
