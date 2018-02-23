@@ -11,8 +11,7 @@ $db = connect();
 </head>
 <body>
 	<header>
-		<h1>JAP Property Management</h1>
-		<a class = 'login' href = "login.php">Login</a>
+		<h1 id='logo'>JAP Property Management</h1>
 		<nav>
 			<?php 
 			if (isset ($_SESSION['username']))

@@ -4,18 +4,14 @@ body {
 	margin:0px;
 }
 main {
-	padding: 0px 20px;
-    background-color: #eedfcc;
-    width: 70%;
-    margin-right: auto;
-    margin-left: auto;
+	background-color: #faebd7;
 }
 footer {
 	padding:10px 10px;
 	background-color:#E9BF00;
 }
 nav {
-	background-color:#E9BF00;
+	background-color: #E9BF00;
 }
 a {
 	text-decoration:none;
@@ -36,6 +32,10 @@ h1 {
 }
 form {
 	margin: 20px;
+}
+#logo {
+    margin-left: 180px;
+    font-size: 3em;
 }
 #apartment1 {
 	background-image:url("15th_street.jpg");

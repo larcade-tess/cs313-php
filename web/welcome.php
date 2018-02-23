@@ -11,7 +11,8 @@ $db = connect();
 </head>
 <body>
 	<header>
-		<h1>JAP Property Management</h1>
+		<h1 id='logo'>JAP Property Management</h1>
+		<nav>
 			<?php 
 			if (isset ($_SESSION['username']))
 			{
@@ -22,6 +23,7 @@ $db = connect();
 				include 'modules/nav.php';
 			}
 			?> 
+		</nav>
 		</nav>
 	</header>
 	<main>

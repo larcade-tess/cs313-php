@@ -13,20 +13,17 @@ $db = connect();
 	<header>
 		<h1 id='logo'>JAP Property Management</h1>
 		<nav>
-			<ul>
-				<li>
-					<a href='apartments.php'>Apartments</a>
-				</li>
-				<li>
-					<a href='showing.php'>Schedule A Showing</a>
-				</li>
-				<li>
-					<a href='apply.html'>Apply</a>
-				</li>
-				<li>
-					<a href='contacts.php'>Contacts</a>
-				</li>
-			</ul>
+			<?php 
+			if (isset ($_SESSION['username']))
+			{
+				include 'modules/navlogin.php';
+			}
+			else
+			{
+				include 'modules/nav.php';
+			}
+			?> 
+		</nav>
 		</nav>
 	</header>
 	<main>
