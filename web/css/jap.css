@@ -81,9 +81,7 @@ form {
 }
 .aptinfo {
 	display:flex;
-}
-.aptinfo a {
-	padding:0px;
+	flex-flow:column;
 }
 .button-right {
 	width:20px;

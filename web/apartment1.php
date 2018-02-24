@@ -28,12 +28,11 @@ $db = connect();
 	<main>
 		<div>
 			<?php
-			$dbinfo = $db->query('SELECT location, price FROM apartment WHERE apartment_id = 1');
+			$dbinfo = $db->query('SELECT location FROM apartment WHERE apartment_id = 1');
 			while ($row = $dbinfo->fetch(PDO::FETCH_ASSOC))
 				{
-					echo '<div class = "aptinfo">';
-					echo '<div class="locationpg"><h2>' . $row[location] . '</h2></div>';
-					echo '<div class="pricepg"><h3>' . $row[price] . ' Monthly </h3></div> </div>';
+					echo '<div class = "aptloc">';
+					echo '<div class="locationpg"><h2>' . $row[location] . '</h2></div></div>';
 				}
 				?>
 			</div>
@@ -58,12 +57,25 @@ $db = connect();
 					<img class ="aptimg" src="img/15th street 14.jpg">
 					<img class ="aptimg" src="img/15th street 1.jpg">
 				</div>
-
 			</div>
-		</main>
-		<footer>
-			<script src="js/slideshow.js"></script>
-			&copy; Tess Larcade 2018
-		</footer>
-	</body>
-	</html>
+			<?php
+			$dbinfo = $db->query('SELECT price, sqft, bed, bath, details FROM apartment WHERE apartment_id = 1');
+			while ($row = $dbinfo->fetch(PDO::FETCH_ASSOC))
+				{
+					echo '<div class = "aptinfo">';
+					echo '<p>' . $row[price] . ' Monthly </p>';
+					echo '<p> SQFT: ' . $row[sqft]. '</p>';
+					echo '<p> Bedrooms: ' . $row[bed]. '</p>';
+					echo '<p> Bathrooms: ' . $row[bath]. '</p>';
+					echo '<p> Details: ' . $row[details]. '</p>';
+					echo'</div>';
+				}
+				?>
+
+			</main>
+			<footer>
+				<script src="js/slideshow.js"></script>
+				&copy; Tess Larcade 2018
+			</footer>
+		</body>
+		</html>
