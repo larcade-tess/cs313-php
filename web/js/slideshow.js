@@ -7,7 +7,7 @@ function slide(n) {
 
 function showDivs(n) {
 	var i;
-	var x = document.getElementsByClassName("slideimg");
+	var x = document.getElementsByClassName("aptimg");
 	if (n > x.length) {index = 1} 
 		if (n < 1) {index = x.length} ;
 	for (i = 0; i < x.length; i++) {
