@@ -26,12 +26,12 @@ $db = connect();
 		</nav>
 	</header>
 	<main>
-		<div>
+		<div class = 'indent'>
 			<?php
 			if (isset ($_SESSION['username']))
 			{
 				$user = $_SESSION['username'];
-				echo '<div> <h4> Welcome ' . $user . '</h4></div>';
+				echo '<div> <h2> Welcome ' . $user . '</h2></div>';
 			}
 			else
 			{
