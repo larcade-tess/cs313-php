@@ -75,6 +75,7 @@ $db = connect();
 				</div>
 			</main>
 			<footer>
+				<script src="js/slideshow.js"></script>
 				&copy; Tess Larcade 2018
 			</footer>
 		</body>
