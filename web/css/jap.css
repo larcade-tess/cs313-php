@@ -65,7 +65,9 @@ form {
 }
 .aptimg {
 	height:auto;
-	width:400px;
+	width:600px;
+	margin-left:auto;
+	margin-right:auto;
 }
 .containapart {
 	display:flex;
