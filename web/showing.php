@@ -33,19 +33,21 @@ $db = connect();
 			<div>
 				<form action='thanks.php' method='post'>
 					<div class = 'section'>
-						<h4>Location</h4>
-						<select name='location' required>
-							<?php 
-							$dbinfo = $db->query('SELECT apartment_id, rented, location FROM apartment');
-							while ($row = $dbinfo->fetch(PDO::FETCH_ASSOC))
-								{
-									if ($row[rented] == false)
+						<div class = 'name'>
+							<h4>Location</h4>
+							<select name='location' required>
+								<?php 
+								$dbinfo = $db->query('SELECT apartment_id, rented, location FROM apartment');
+								while ($row = $dbinfo->fetch(PDO::FETCH_ASSOC))
 									{
-										echo '<option value ="' . $row[apartment_id] . '">' . $row[location] . '</option>';
-									} 
-								}
-								?>
-							</select>
+										if ($row[rented] == false)
+										{
+											echo '<option value ="' . $row[apartment_id] . '">' . $row[location] . '</option>';
+										} 
+									}
+									?>
+								</select>
+							</div>
 						</div>
 						<div class='section'>
 							<div class='name'>
