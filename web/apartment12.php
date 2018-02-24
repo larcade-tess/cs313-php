@@ -64,7 +64,7 @@ $db = connect();
 				while ($row = $dbinfo->fetch(PDO::FETCH_ASSOC))
 					{
 						echo '<div class = "aptinfo">';
-						echo '<p>' . $row[price] . ' Monthly </p>';
+						echo '<p> Price: ' . $row[price] . ' Monthly </p>';
 						echo '<p> SQFT: ' . $row[sqft]. '</p>';
 						echo '<p> Bedrooms: ' . $row[bed]. '</p>';
 						echo '<p> Bathrooms: ' . $row[bath]. '</p>';
