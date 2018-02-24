@@ -32,36 +32,51 @@ $db = connect();
 			</div>
 			<div>
 				<form action='thanks.php' method='post'>
-					<div class='section'>
-						<div class='name'>
-							<h4>First Name</h4>
-							<input type='Name' name='fName' required>
+					<div class = 'section'>
+						<h4>Location</h4>
+						<select name='location' required>
+							<?php 
+							$dbinfo = $db->query('SELECT apartment_id, rented, location FROM apartment');
+							while ($row = $dbinfo->fetch(PDO::FETCH_ASSOC))
+								{
+									if ($row[rented] == false)
+									{
+										echo '<option value ="' . $row[apartment_id] . '">' . $row[location] . '</option>';
+									} 
+								}
+								?>
+							</select>
 						</div>
-						<div class='name'>
-							<h4>Last Name</h4>
-							<input type='Name' name='lName' required>
+						<div class='section'>
+							<div class='name'>
+								<h4>First Name</h4>
+								<input type='Name' name='fName' required>
+							</div>
+							<div class='name'>
+								<h4>Last Name</h4>
+								<input type='Name' name='lName' required>
+							</div>
 						</div>
-					</div>
-					<div class='section'>
-						<div class='name'>
-							<h4>Phone Number</h4>
-							<input phone='Phone' name='phone' required>
+						<div class='section'>
+							<div class='name'>
+								<h4>Phone Number</h4>
+								<input phone='Phone' name='phone' required>
+							</div>
+							<div class='name'>
+								<h4>Email Address</h4>
+								<input email='Email' name='email' required>
+							</div>
 						</div>
-						<div class='name'>
-							<h4>Email Address</h4>
-							<input email='Email' name='email' required>
-						</div>
-					</div>
-					<h4>Comments</h4>
-					<textarea rows="4" cols="50" name='comments'></textarea>
-					<br>
-					<input class = 'button' type='submit'>
-				</form>
+						<h4>Comments</h4>
+						<textarea rows="4" cols="50" name='comments'></textarea>
+						<br>
+						<input class = 'button' type='submit'>
+					</form>
+				</div>
 			</div>
-		</div>
-	</main>
-	<footer>
-		&copy; Tess Larcade 2018
-	</footer>
-</body>
-</html>
+		</main>
+		<footer>
+			&copy; Tess Larcade 2018
+		</footer>
+	</body>
+	</html>
