@@ -36,14 +36,18 @@ $db = connect();
 				echo '<div class = "apartments">
 				<div class="column1"><h4>Name</h4></div> 
 				<div class="column2"><h4>Phone</h4></div> 
-				<div class="column3"><h4>Email</h4></div>';
+				<div class="column3"><h4>Email</h4></div>
+				<div class="column4"><h4>Apartment ID</h4></div>';
 
-				$dbinfo = $db->query('SELECT first_name, last_name, phone, email FROM contact');
+				$dbinfo = $db->query('SELECT contact.first_name, contact.last_name, contact.phone, contact.email, account_apartment_id
+					FROM contact
+					FULL OUTER JOIN account ON contact_id = account_contact_id;');
 				while ($row = $dbinfo->fetch(PDO::FETCH_ASSOC))
 					{
 						echo '<div class="column1">' . $row[first_name] . " " . $row[last_name] . '</div>
 						<div class="column2">' . $row[phone] . '</div>
 						<div class="column3">' . $row[email] . '</div>';
+						echo '<div class="column4">' . $row[account_apartment_id] . '</div>';
 					}
 					echo '</div>';		
 				}

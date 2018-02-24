@@ -11,5 +11,7 @@
 	<li>
 		<a href='allApartments.php'>All Apartments</a>
 	</li>
-
+	<li>
+		<a href='settings.php'>Settings</a>
+	</li>
 </ul>

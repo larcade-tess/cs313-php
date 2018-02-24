@@ -26,22 +26,33 @@ $db = connect();
 		</nav>
 	</header>
 	<main>
-		<div class='indent'>
+		<?php
+		if (isset ($_SESSION['username']))
+		{
+			echo'<div class="indent">
 			<div>
-				<h3>Login</h3>
+			<h3>Settings</h3>
 			</div>
-			<form action="validate.php" method = "post">
-				<div class = 'section'>
-					<div class = 'name'>
-						<h4>Username:</h4> 
-						<input type="username" id="username" name="user"><br>
-						<h4>Password:</h4> 
-						<input type="password" id="password" name="pass"><br>
-					</div>
-				</div>
-				<button type = "submit" class = 'button'>Login</button>
+			<form action="updatepass.php" method = "post">
+			<div class = "section">
+			<div class = "name">
+			<h4>Current Password:</h4> 
+			<input type="password" id="password" name="passold"><br>
+			<h4>New Password:</h4> 
+			<input type="password" id="password" name="passnew"><br>
+			</div>
+			</div>
+			<button type = "submit" class = "button">Submit</button>
 			</form>
-		</div>
+			</div>';	
+		}
+		else
+		{
+			header("Location: login.php");
+			die(); 
+		}
+		?> 
+
 	</main>
 	<footer>
 		&copy; Tess Larcade 2018
