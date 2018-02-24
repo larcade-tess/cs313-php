@@ -145,6 +145,7 @@ form {
 }
 .indent {
 	padding-left:80px;
+	margin-bottom:20px;
 }
 .section {
 	display: flex;
@@ -160,10 +161,10 @@ form {
 	padding: 5px 65px;
 	margin-top: 20px;
 }
-.contactinfo {
+/*.contactinfo {
 	margin-bottom: 30px;
-}
+}*/
 .fname {
 	font-weight:700px;
-	
+
 }
