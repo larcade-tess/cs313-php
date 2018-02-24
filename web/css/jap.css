@@ -145,7 +145,7 @@ form {
 }
 .indent {
 	padding-left:80px;
-	margin-bottom:20px;
+	padding-bottom:20px;
 }
 .section {
 	display: flex;
