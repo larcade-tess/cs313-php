@@ -26,29 +26,25 @@ $db = connect();
 		</nav>
 	</header>
 	<main>
-		<div>
-			<h3>Contacts</h3>
-		</div>
-		<?php
-		if (isset ($_SESSION['username']))
-		{
-			?>
-			<div class = container>
-				<?php
+		<div class = 'indent'>
+			<div>
+				<h3>Contacts</h3>
+			</div>
+			<?php
+			if (isset ($_SESSION['username']))
+			{
+				echo '<div class = container>
+				<div class="column1"><h4>Name</h4></div> 
+				<div class="column2"><h4>Phone</h4></div> 
+				<div class="column3"><h4>Email</h4></div>';
+
 				$dbinfo = $db->query('SELECT first_name, last_name, phone, email FROM contact');
 				while ($row = $dbinfo->fetch(PDO::FETCH_ASSOC))
 					{
-						if ($row[rented] == false)
-						{
-							echo '<div class = "contactinfo"> 
-							<div class="fname">' . $row[first_name] . '</div>';
-							echo '<div class="lname">' . $row[last_name] . '</div>';
-							echo '<div class="phone">' . $row[phone] . '</div>';
-							echo '<div class="email">' . $row[email] . ' </div> </div>';
-						} 
-					}
-					?> 
-					<?php		
+						echo '<div class="column1">' . $row[first_name] . $row[last_name] . '</div>
+						<div class="column2">' . $row[phone] . '</div>
+						<div class="column3">' . $row[email] . '</div></div>';
+					}		
 				}
 				else
 				{
@@ -56,10 +52,6 @@ $db = connect();
 					die(); 
 				}
 				?> 
-
-<!-- 
-				$query = 'INSERT INTO scripture(book, chapter, verse, content) VALUES(:book, :chapter, :verse, :content)';
-				$statement = $db->prepare($query); -->
 			</div>
 		</main>
 		<footer>
