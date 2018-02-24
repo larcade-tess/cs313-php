@@ -71,19 +71,20 @@ form {
 	display: grid;
 	grid-gap: 20px;
 }
+.apartmentimg {
+	grid-column:1,2;
+}
+.location {
+	grid-column:2,3;
+}
+.price {
+	grid-row:2,3;
+}
 .aptinfo {
 	display:flex;
 }
 .aptinfo a {
 	padding:0px;
-}
-.apartment{
-	grid-column-start: 2;
-	grid-column-end:3;
-}
-.location {
-	grid-row-start:2;
-	grid-row-end:3;
 }
 .grid-img1 {
 	grid-column-start: 1;
