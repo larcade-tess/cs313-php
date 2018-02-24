@@ -68,10 +68,8 @@ form {
 	width:400px;
 }
 .containapart {
+	display:flex;
 	padding-right:30px;
-}
-.container {
-	display: flex;
 }
 .apartmentimg {
 	display:flex;
@@ -79,6 +77,7 @@ form {
 .info {
 	display:flex;
 	flex-flow:column;
+	padding:0px 20px;
 }
 .aptinfo {
 	display:flex;

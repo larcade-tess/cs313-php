@@ -41,7 +41,7 @@ $db = connect();
 							echo '<div class = "containapart"><a href="apartment'. $row[apartment_id] . '.php">
 							<div class="apartmentimg" id="apartment' . $row[apartment_id] . '">' . 
 							'</div></a>';
-							echo '<div class="info"> <div class="location">' . $row[location] . '</div>';
+							echo '<div class="info"> <div class="location"><h4>' . $row[location] . '</h4></div>';
 							echo '<div class="price">' . $row[price] . ' Monthly </div></div></div>';
 						} 
 					}
