@@ -5,7 +5,4 @@
 	<li>
 		<a href='showing.php'>Schedule A Showing</a>
 	</li>
-	<li>
-		<a href='apply.html'>Apply</a>
-	</li>
 </ul>
