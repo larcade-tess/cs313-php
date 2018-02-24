@@ -31,7 +31,8 @@ $db = connect();
 			if (isset ($_SESSION['username']))
 			{
 				$user = $_SESSION['username'];
-				echo '<div> <h2> Welcome ' . $user . '</h2></div>';
+				header("Location: apartments.php");
+				die(); 
 			}
 			else
 			{
