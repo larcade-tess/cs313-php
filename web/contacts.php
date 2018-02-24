@@ -33,7 +33,7 @@ $db = connect();
 			<?php
 			if (isset ($_SESSION['username']))
 			{
-				echo '<div class = container>
+				echo '<div class = "apartments">
 				<div class="column1"><h4>Name</h4></div> 
 				<div class="column2"><h4>Phone</h4></div> 
 				<div class="column3"><h4>Email</h4></div>';
