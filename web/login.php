@@ -32,6 +32,8 @@ $db = connect();
 					<div class = 'name'>
 						<h4>Username:</h4> 
 						<input type="username" id="username" name="user"><br>
+					</div>
+					<div class = 'name'>
 						<h4>Password:</h4> 
 						<input type="password" id="password" name="pass"><br>
 					</div>
