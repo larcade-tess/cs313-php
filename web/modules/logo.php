@@ -4,7 +4,7 @@ if (isset ($_SESSION['username']))
 {
 	$user = $_SESSION['username'];
 	echo '<div class = "login"> Welcome ' . $user . '</div>';
-	echo '<a class = "login" href = "logout.php">Logout</a>';
+	echo '<a class = "logout" href = "logout.php">Logout</a>';
 }
 else
 {

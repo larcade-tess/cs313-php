@@ -85,15 +85,25 @@ form {
 .aptinfo a {
 	padding:0px;
 }
-.grid-img1 {
-	grid-column-start: 1;
-	grid-column-end: 2;
-}
-.grid-img2 {
-	grid-column-start: 2;
-	grid-column-end: 3;
-}
+.slideshow {
 
+}
+.button-right {
+	width:20px;
+	height:334px;
+	float: right;
+	background-color:#333333;
+	border: 2px solid #333333;
+	opacity:.8;
+}
+.button-left {
+	width:20px;
+	height:334px;
+	float: left;
+	background-color:#333333;
+	border: 2px solid #333333;
+	opacity:.8;
+}
 .apartments {
 	display:grid;
 	grid-gap:15px;
@@ -143,6 +153,12 @@ form {
 	right: 30px;
 	color:#E9BF00;
 }
+.logout {
+	position:absolute;
+	top: 35px;
+	right: 30px;
+	color:#E9BF00;
+}
 .indent {
 	padding-left:80px;
 	padding-bottom:20px;
@@ -161,9 +177,6 @@ form {
 	padding: 5px 65px;
 	margin-top: 20px;
 }
-/*.contactinfo {
-	margin-bottom: 30px;
-}*/
 .fname {
 	font-weight:700px;
 

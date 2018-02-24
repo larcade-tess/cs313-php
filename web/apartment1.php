@@ -35,30 +35,34 @@ $db = connect();
 					echo '<div class="locationpg"><h2>' . $row[location] . '</h2></div>';
 					echo '<div class="pricepg"><h3>' . $row[price] . ' Monthly </h3></div> </div>';
 				}
-			?>
+				?>
 			</div>
+			<div class = "containslide">
+				<div><button class="button-left" onclick="slide(-1)"> &#10094; </button></div>
+				<div><button class="button-right" onclick="slide(+1)">&#10095;</button></div>
 
-			<div class = container>
-
-				<div class="grid-img1"><img class ="aptimg" src="img/15th street 15.jpg"></div>
-				<div class="grid-img2"><img class ="aptimg" src="img/15th street 2.jpg"></div>
-				<div class="grid-img1"><img class ="aptimg" src="img/15th street 3.jpg"></div>
-				<div class="grid-img2"><img class ="aptimg" src="img/15th street 4.jpg"></div>
-				<div class="grid-img1"><img class ="aptimg" src="img/15th street 5.jpg"></div>
-				<div class="grid-img2"><img class ="aptimg" src="img/15th street 6.jpg"></div>
-				<div class="grid-img1"><img class ="aptimg" src="img/15th street 7.jpg"></div>
-				<div class="grid-img2"><img class ="aptimg" src="img/15th street 8.jpg"></div>
-				<div class="grid-img1"><img class ="aptimg" src="img/15th street 9.jpg"></div>
-				<div class="grid-img2"><img class ="aptimg" src="img/15th street 10.jpg"></div>
-				<div class="grid-img1"><img class ="aptimg" src="img/15th street 11.jpg"></div>
-				<div class="grid-img2"><img class ="aptimg" src="img/15th street 12.jpg"></div>
-				<div class="grid-img1"><img class ="aptimg" src="img/15th street 13.jpg"></div>
-				<div class="grid-img2"><img class ="aptimg" src="img/15th street 14.jpg"></div>
-				<div class="grid-img1"><img class ="aptimg" src="img/15th street 1.jpg"></div>
+				<div class="slideshow">
+					<img class ="aptimg" src="img/15th street 15.jpg">
+					<img class ="aptimg" src="img/15th street 2.jpg">
+					<img class ="aptimg" src="img/15th street 3.jpg">
+					<img class ="aptimg" src="img/15th street 4.jpg">
+					<img class ="aptimg" src="img/15th street 5.jpg">
+					<img class ="aptimg" src="img/15th street 6.jpg">
+					<img class ="aptimg" src="img/15th street 7.jpg">
+					<img class ="aptimg" src="img/15th street 8.jpg">
+					<img class ="aptimg" src="img/15th street 9.jpg">
+					<img class ="aptimg" src="img/15th street 10.jpg">
+					<img class ="aptimg" src="img/15th street 11.jpg">
+					<img class ="aptimg" src="img/15th street 12.jpg">
+					<img class ="aptimg" src="img/15th street 13.jpg">
+					<img class ="aptimg" src="img/15th street 14.jpg">
+					<img class ="aptimg" src="img/15th street 1.jpg">
+				</div>
 
 			</div>
 		</main>
 		<footer>
+			<script src="js/slideshow.js"></script>
 			&copy; Tess Larcade 2018
 		</footer>
 	</body>
