@@ -26,18 +26,20 @@ $db = connect();
 		</nav>
 	</header>
 	<main>
-		<div>
-			<h3>Thank You</h3>
-		</div>
-		<div>
-			<?php 
-			$info = "Thanks for contacting us " . $_POST['fName'] . ". ";
-			$info .= "We will be in touch shortly. " ;
-			$info .= "By phone: " . $_POST['phone'] ;
-			$info .= " Or Email: " . $_POST['email'];
-			$info_clean = htmlspecialchars($info);
-			echo $info_clean;
-			?>
+		<div class = 'indent'>
+			<div>
+				<h3>Thank You</h3>
+			</div>
+			<div>
+				<?php 
+				$info = "Thanks for contacting us " . $_POST['fName'] . ", ";
+				$info .= "we will be in touch shortly by " ;
+				$info .= "phone: " . $_POST['phone'] ;
+				$info .= " and Email: " . $_POST['email'];
+				$info_clean = htmlspecialchars($info);
+				echo $info_clean;
+				?>
+			</div>
 		</div>
 	</main>
 	<footer>
