@@ -98,8 +98,7 @@ $db = connect();
 						<div class = 'name'>
 							<h4>Details</h4>
 							<textarea rows="4" cols="50" name="details" required></textarea>
-						</div>
-						<div class = 'name'>
+							<br>
 							<h4>Comments</h4>
 							<textarea rows="4" cols="50" name='comments'></textarea>
 						</div>
