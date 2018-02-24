@@ -26,13 +26,17 @@ $db = connect();
 		</nav>
 	</header>
 	<main>
-		<div>
+		<div class='indent'>
 			<form action="validate.php" method = "post">
-				<h3>Username</h3> 
-				<input type="username" id="username" name="user"><br>
-				<h3>Password:</h3> 
-				<input type="password" id="password" name="pass"><br>
-				<button type = "submit">Login</button>
+				<div class = 'section'>
+					<div class = 'name'>
+						<h4>Username:</h4> 
+						<input type="username" id="username" name="user"><br>
+						<h4>Password:</h4> 
+						<input type="password" id="password" name="pass"><br>
+					</div>
+				</div>
+				<button type = "submit" class = 'button'>Login</button>
 			</form>
 		</div>
 	</main>
