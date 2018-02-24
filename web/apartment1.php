@@ -11,7 +11,7 @@ $db = connect();
 </head>
 <body>
 	<header>
-		<h1 id='logo'>JAP Property Management</h1>
+		<?php include 'modules/logo.php';?>
 		<nav>
 			<?php 
 			if (isset ($_SESSION['username']))
