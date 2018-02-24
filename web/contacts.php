@@ -41,10 +41,11 @@ $db = connect();
 				$dbinfo = $db->query('SELECT first_name, last_name, phone, email FROM contact');
 				while ($row = $dbinfo->fetch(PDO::FETCH_ASSOC))
 					{
-						echo '<div class="column1">' . $row[first_name] . $row[last_name] . '</div>
+						echo '<div class="column1">' . $row[first_name] . " " . $row[last_name] . '</div>
 						<div class="column2">' . $row[phone] . '</div>
-						<div class="column3">' . $row[email] . '</div></div>';
-					}		
+						<div class="column3">' . $row[email] . '</div>';
+					}
+					echo '</div>';		
 				}
 				else
 				{
