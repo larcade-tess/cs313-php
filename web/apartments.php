@@ -33,7 +33,7 @@ $db = connect();
 
 			<div class = container>
 				<?php
-				$dbinfo = $db->query('SELECT apartment_id, rented, location, price FROM apartment');
+				$dbinfo = $db->query('SELECT apartment_id, rented, location, price FROM apartment ORDER BY apartment_id');
 				while ($row = $dbinfo->fetch(PDO::FETCH_ASSOC))
 					{
 						if ($row[rented] == false)
