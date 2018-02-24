@@ -27,6 +27,9 @@ $db = connect();
 	</header>
 	<main>
 		<div class='indent'>
+			<div>
+				<h3>Login</h3>
+			</div>
 			<form action="validate.php" method = "post">
 				<div class = 'section'>
 					<div class = 'name'>
