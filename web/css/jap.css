@@ -42,6 +42,9 @@ h4 {
 form {
 	padding-bottom:30px;
 }
+.pad-h2 {
+	padding-top:20px;
+}
 #logo {
 	margin-left: 80px;
 	font-size: 3em;
@@ -49,6 +52,11 @@ form {
 }
 #apartment1 {
 	background-image:url("15th_street.jpg");
+	height:200px;
+	width:200px;
+}
+#apartment13 {
+	background-image:url("http://via.placeholder.com/200x200");
 	height:200px;
 	width:200px;
 }

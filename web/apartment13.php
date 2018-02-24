@@ -28,38 +28,54 @@ $db = connect();
 	<main>
 		<div>
 			<?php
-			$dbinfo = $db->query('SELECT location, price FROM apartment WHERE apartment_id = 13');
-			while ($row = $dbinfo->fetch(PDO::FETCH_ASSOC))
+			$dbloc = $db->query('SELECT location FROM apartment WHERE apartment_id = 13');
+			while ($row = $dbloc->fetch(PDO::FETCH_ASSOC))
 				{
-					echo '<div class = "aptinfo">';
-					echo '<div class="locationpg"><h2>' . $row[location] . '</h2></div>';
-					echo '<div class="pricepg"><h3>' . $row[price] . ' Monthly </h3></div> </div>';
+					echo '<div class = "aptloc">';
+					echo '<div class="indent"><h2 class = "pad-h2">' . $row[location] . '</h2></div></div>';
 				}
-			?>
+				?>
 			</div>
+			<div class = "containslide">
+				<div><button class="button-left" onclick="slide(-1)"> &#10094; </button></div>
+				<div><button class="button-right" onclick="slide(+1)">&#10095;</button></div>
 
-			<div class = container>
-
-				<div class="grid-img1"><img class ="aptimg" src="http://via.placeholder.com/350x350"></div>
-				<div class="grid-img2"><img class ="aptimg" src="http://via.placeholder.com/350x350"></div>
-				<div class="grid-img1"><img class ="aptimg" src="http://via.placeholder.com/350x350"></div>
-				<div class="grid-img2"><img class ="aptimg" src="http://via.placeholder.com/350x350"></div>
-				<div class="grid-img1"><img class ="aptimg" src="http://via.placeholder.com/350x350"></div>
-				<div class="grid-img2"><img class ="aptimg" src="http://via.placeholder.com/350x350"></div>
-				<div class="grid-img1"><img class ="aptimg" src="http://via.placeholder.com/350x350"></div>
-				<div class="grid-img2"><img class ="aptimg" src="http://via.placeholder.com/350x350"></div>
-				<div class="grid-img1"><img class ="aptimg" src="http://via.placeholder.com/350x350"></div>
-				<div class="grid-img2"><img class ="aptimg" src="http://via.placeholder.com/350x350"></div>
-				<div class="grid-img1"><img class ="aptimg" src="http://via.placeholder.com/350x350"></div>
-				<div class="grid-img2"><img class ="aptimg" src="http://via.placeholder.com/350x350"></div>
-				<div class="grid-img1"><img class ="aptimg" src="http://via.placeholder.com/350x350"></div>
-				<div class="grid-img2"><img class ="aptimg" src="http://via.placeholder.com/350x350"></div>
-				<div class="grid-img1"><img class ="aptimg" src="http://via.placeholder.com/350x350"></div>
-
+				<div class="slideshow">
+					<img class ="aptimg" src="http://via.placeholder.com/600x450">
+					<img class ="aptimg" src="http://via.placeholder.com/600x450">
+					<img class ="aptimg" src="http://via.placeholder.com/600x450">
+					<img class ="aptimg" src="http://via.placeholder.com/600x450">
+					<img class ="aptimg" src="http://via.placeholder.com/600x450">
+					<img class ="aptimg" src="http://via.placeholder.com/600x450">
+					<img class ="aptimg" src="http://via.placeholder.com/600x450">
+					<img class ="aptimg" src="http://via.placeholder.com/600x450">
+					<img class ="aptimg" src="http://via.placeholder.com/600x450">
+					<img class ="aptimg" src="http://via.placeholder.com/600x450">
+					<img class ="aptimg" src="http://via.placeholder.com/600x450">
+					<img class ="aptimg" src="http://via.placeholder.com/600x450">
+					<img class ="aptimg" src="http://via.placeholder.com/600x450">
+					<img class ="aptimg" src="http://via.placeholder.com/600x450">
+					<img class ="aptimg" src="http://via.placeholder.com/600x450">
+				</div>
 			</div>
-		</main>
-		<footer>
-			&copy; Tess Larcade 2018
-		</footer>
-	</body>
-	</html>
+			<div class = 'indent'>
+				<?php
+				$dbinfo = $db->query('SELECT price, sqft, bed, bath, details FROM apartment WHERE apartment_id = 13');
+				while ($row = $dbinfo->fetch(PDO::FETCH_ASSOC))
+					{
+						echo '<div class = "aptinfo">';
+						echo '<p>' . $row[price] . ' Monthly </p>';
+						echo '<p> SQFT: ' . $row[sqft]. '</p>';
+						echo '<p> Bedrooms: ' . $row[bed]. '</p>';
+						echo '<p> Bathrooms: ' . $row[bath]. '</p>';
+						echo '<p> Details: ' . $row[details]. '</p>';
+						echo'</div>';
+					}
+					?>
+				</div>
+			</main>
+			<footer>
+				&copy; Tess Larcade 2018
+			</footer>
+		</body>
+		</html>

@@ -28,7 +28,7 @@ $db = connect();
 	<main>
 		<div>
 			<?php
-			$dbloc = $db->query('SELECT location FROM apartment WHERE apartment_id = 1');
+			$dbloc = $db->query('SELECT location FROM apartment WHERE apartment_id = 12');
 			while ($row = $dbloc->fetch(PDO::FETCH_ASSOC))
 				{
 					echo '<div class = "aptloc">';
@@ -41,26 +41,26 @@ $db = connect();
 				<div><button class="button-right" onclick="slide(+1)">&#10095;</button></div>
 
 				<div class="slideshow">
-					<img class ="aptimg" src="img/15th street 15.jpg">
-					<img class ="aptimg" src="img/15th street 2.jpg">
-					<img class ="aptimg" src="img/15th street 3.jpg">
-					<img class ="aptimg" src="img/15th street 4.jpg">
-					<img class ="aptimg" src="img/15th street 5.jpg">
-					<img class ="aptimg" src="img/15th street 6.jpg">
-					<img class ="aptimg" src="img/15th street 7.jpg">
-					<img class ="aptimg" src="img/15th street 8.jpg">
-					<img class ="aptimg" src="img/15th street 9.jpg">
-					<img class ="aptimg" src="img/15th street 10.jpg">
-					<img class ="aptimg" src="img/15th street 11.jpg">
-					<img class ="aptimg" src="img/15th street 12.jpg">
-					<img class ="aptimg" src="img/15th street 13.jpg">
-					<img class ="aptimg" src="img/15th street 14.jpg">
-					<img class ="aptimg" src="img/15th street 1.jpg">
+					<img class ="aptimg" src="http://via.placeholder.com/600x450">
+					<img class ="aptimg" src="http://via.placeholder.com/600x450">
+					<img class ="aptimg" src="http://via.placeholder.com/600x450">
+					<img class ="aptimg" src="http://via.placeholder.com/600x450">
+					<img class ="aptimg" src="http://via.placeholder.com/600x450">
+					<img class ="aptimg" src="http://via.placeholder.com/600x450">
+					<img class ="aptimg" src="http://via.placeholder.com/600x450">
+					<img class ="aptimg" src="http://via.placeholder.com/600x450">
+					<img class ="aptimg" src="http://via.placeholder.com/600x450">
+					<img class ="aptimg" src="http://via.placeholder.com/600x450">
+					<img class ="aptimg" src="http://via.placeholder.com/600x450">
+					<img class ="aptimg" src="http://via.placeholder.com/600x450">
+					<img class ="aptimg" src="http://via.placeholder.com/600x450">
+					<img class ="aptimg" src="http://via.placeholder.com/600x450">
+					<img class ="aptimg" src="http://via.placeholder.com/600x450">
 				</div>
 			</div>
 			<div class = 'indent'>
 				<?php
-				$dbinfo = $db->query('SELECT price, sqft, bed, bath, details FROM apartment WHERE apartment_id = 1');
+				$dbinfo = $db->query('SELECT price, sqft, bed, bath, details FROM apartment WHERE apartment_id = 12');
 				while ($row = $dbinfo->fetch(PDO::FETCH_ASSOC))
 					{
 						echo '<div class = "aptinfo">';
@@ -75,7 +75,6 @@ $db = connect();
 				</div>
 			</main>
 			<footer>
-				<script src="js/slideshow.js"></script>
 				&copy; Tess Larcade 2018
 			</footer>
 		</body>
